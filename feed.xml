@@ -1,46 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CellFix Brasil</title>
-    <link>https://www.cellfixbrasil.com.br</link>
+    <link>https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app</link>
     <description>Resolva problemas de celulares e apps com tutoriais práticos e soluções testadas para Android, iPhone, apps bancários e populares.</description>
     <language>pt-br</language>
     <lastBuildDate>Fri, 22 Aug 2026 00:00:00 -0300</lastBuildDate>
-    <atom:link href="https://www.cellfixbrasil.com.br/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Nubank não abre no celular — como resolver em 5 passos</title>
-      <link>https://www.cellfixbrasil.com.br/artigos/nubank-nao-abre-no-celular-como-resolver</link>
+      <link>https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/artigos/nubank-nao-abre-no-celular-como-resolver</link>
       <description>Descubra as soluções mais eficazes para o erro do Nubank que não abre no celular. Guia completo com 5 passos testados.</description>
       <pubDate>Thu, 15 Aug 2026 00:00:00 -0300</pubDate>
-      <guid>https://www.cellfixbrasil.com.br/artigos/nubank-nao-abre-no-celular-como-resolver</guid>
+      <guid>https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/artigos/nubank-nao-abre-no-celular-como-resolver</guid>
     </item>
     <item>
       <title>App do Caixa não funciona? Veja 7 soluções testadas</title>
-      <link>https://www.cellfixbrasil.com.br/artigos/app-do-caixa-nao-funciona</link>
+      <link>https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/artigos/app-do-caixa-nao-funciona</link>
       <description>Resolve os problemas mais comuns do app do Caixa com nosso guia completo de soluções.</description>
       <pubDate>Mon, 12 Aug 2026 00:00:00 -0300</pubDate>
-      <guid>https://www.cellfixbrasil.com.br/artigos/app-do-caixa-nao-funciona</guid>
+      <guid>https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/artigos/app-do-caixa-nao-funciona</guid>
     </item>
     <item>
       <title>Samsung Galaxy S24 desligando sozinho — 6 causas e soluções</title>
-      <link>https://www.cellfixbrasil.com.br/artigos/samsung-galaxy-s24-desligando-sozinho</link>
+      <link>https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/artigos/samsung-galaxy-s24-desligando-sozinho</link>
       <description>Entenda por que seu Galaxy S24 desliga sozinho e como resolver o problema rapidamente.</description>
       <pubDate>Sat, 10 Aug 2026 00:00:00 -0300</pubDate>
-      <guid>https://www.cellfixbrasil.com.br/artigos/samsung-galaxy-s24-desligando-sozinho</guid>
+      <guid>https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/artigos/samsung-galaxy-s24-desligando-sozinho</guid>
     </item>
     <item>
       <title>WhatsApp: mensagem não enviada — 8 soluções</title>
-      <link>https://www.cellfixbrasil.com.br/artigos/whatsapp-mensagem-nao-enviada</link>
+      <link>https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/artigos/whatsapp-mensagem-nao-enviada</link>
       <description>Saiba o que fazer quando o WhatsApp não envia mensagens e volte a conversar normalmente.</description>
       <pubDate>Thu, 08 Aug 2026 00:00:00 -0300</pubDate>
-      <guid>https://www.cellfixbrasil.com.br/artigos/whatsapp-mensagem-nao-enviada</guid>
+      <guid>https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/artigos/whatsapp-mensagem-nao-enviada</guid>
     </item>
     <item>
       <title>Banco do Brasil erro Pix: como resolver agora</title>
-      <link>https://www.cellfixbrasil.com.br/artigos/banco-do-brasil-erro-pix</link>
+      <link>https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/artigos/banco-do-brasil-erro-pix</link>
       <description>Descubra como resolver erros do Pix no app do Banco do Brasil com soluções rápidas e testadas.</description>
       <pubDate>Mon, 04 Aug 2026 00:00:00 -0300</pubDate>
-      <guid>https://www.cellfixbrasil.com.br/artigos/banco-do-brasil-erro-pix</guid>
+      <guid>https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/artigos/banco-do-brasil-erro-pix</guid>
     </item>
   </channel>
 </rss>
