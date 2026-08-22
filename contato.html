@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato | CellFix Brasil</title>
-  <meta name="description" content="Entre em contato com a equipe do CellFix Brasil.">
+  <meta name="description" content="Entre em contato com o CellFix Brasil. Envie sua mensagem, sugestão ou dúvida. Resposta em até 48 horas úteis.">
   <link rel="canonical" href="https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/contato.html">
   <meta property="og:title" content="Contato | CellFix Brasil">
-  <meta property="og:description" content="Entre em contato com a equipe do CellFix Brasil.">
+  <meta property="og:description" content="Entre em contato com o CellFix Brasil. Envie sua mensagem, sugestão ou dúvida. Resposta em até 48 horas úteis.">
   <meta property="og:url" content="https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/contato.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="CellFix Brasil">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Contato | CellFix Brasil">
-  <meta name="twitter:description" content="Entre em contato com a equipe do CellFix Brasil.">
+  <meta name="twitter:description" content="Entre em contato com o CellFix Brasil. Envie sua mensagem, sugestão ou dúvida.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/article.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -22,7 +22,7 @@
 <body>
   <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
 
-    <header class="site-header" id="site-header">
+  <header class="site-header" id="site-header">
     <div class="header-inner">
       <a href="index.html" class="logo">
         <div class="logo-icon">CF</div>
@@ -42,10 +42,10 @@
       </nav>
       <div class="header-actions">
         <button class="search-toggle" id="search-btn" aria-label="Buscar">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </button>
         <button class="mobile-menu-btn" id="hamburger" aria-label="Menu">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </div>
     </div>
@@ -70,7 +70,7 @@
   <div class="search-overlay" id="search-overlay">
     <div class="search-box">
       <div class="search-input-wrap">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" class="search-input" aria-label="Buscar">
         <button type="button" class="search-close" id="close-search" aria-label="Fechar busca">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -79,11 +79,71 @@
       <div class="search-results" id="search-results"></div>
     </div>
   </div>
-</article>
+
+  <main id="conteudo-principal">
+    <div class="container">
+      <article class="page-content">
+        <h1>Contato</h1>
+
+        <p>Estamos aqui para ajudar! Se você tem alguma dúvida, encontrou um erro em nossos artigos, tem sugestões de conteúdo ou simplesmente quer conversar conosco, preencha o formulário abaixo ou utilize um dos nossos canais de contato.</p>
+
+        <section class="contato-section">
+          <h2>Envie sua mensagem</h2>
+          <form class="contato-form" id="contato-form">
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required placeholder="seu@email.com.br">
+            </div>
+            <div class="form-group">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto" required>
+                <option value="">Selecione o assunto</option>
+                <option value="duvida">Dúvida sobre artigo</option>
+                <option value="erro">Reportar erro no site</option>
+                <option value="sugestao">Sugestão de conteúdo</option>
+                <option value="parceria">Proposta de parceria</option>
+                <option value="outro">Outro assunto</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Escreva sua mensagem aqui..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Enviar Mensagem</button>
+          </form>
+        </section>
+
+        <section class="contato-section">
+          <h2>Outros canais</h2>
+          <div class="contato-info-grid">
+            <div class="contato-info-card">
+              <h3>E-mail</h3>
+              <p>Para assuntos gerais, parcerias ou dúvidas:</p>
+              <a href="mailto:contato@cellfixbrasil.com.br">contato@cellfixbrasil.com.br</a>
+            </div>
+            <div class="contato-info-card">
+              <h3>Tempo de resposta</h3>
+              <p>Respondemos todas as mensagens em até <strong>48 horas úteis</strong>. Fins de semana e feriados não são contabilizados.</p>
+            </div>
+            <div class="contato-info-card">
+              <h3>Redes sociais</h3>
+              <p>Siga-nos nas redes sociais para ficar por dentro das novidades e receber dicas rápidas:</p>
+              <div class="contato-social">
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Telegram</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
   </main>
 
-  
-  
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -94,9 +154,9 @@
           </a>
           <p>Resolvendo problemas de celulares e apps para milhões de brasileiros desde 2026.</p>
           <div class="footer-social">
-            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
-            <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+            <a href="#" aria-label="Telegram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a>
           </div>
         </div>
         <div>
@@ -144,13 +204,10 @@
       </div>
     </div>
   </div>
-</div>
 
   <button class="skip-to-top" id="skip-to-top" aria-label="Voltar ao topo">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
->
-</div>
 
   <script src="js/main.js"></script>
   <script src="js/search.js"></script>
@@ -177,7 +234,7 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Contato",
-    "description": "Entre em contato com a equipe do CellFix Brasil.",
+    "description": "Entre em contato com o CellFix Brasil. Envie sua mensagem, sugestão ou dúvida.",
     "url": "https://cellfix-francisco-gomes-projects-299bf8d5.vercel.app/contato.html",
     "isPartOf": {
       "@type": "WebSite",
@@ -208,4 +265,3 @@
   </script>
 </body>
 </html>
-
