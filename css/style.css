@@ -908,6 +908,8 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.03em;
   position: relative;
   z-index: 1;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 .about-hero p {
   font-size: 1.05rem;
