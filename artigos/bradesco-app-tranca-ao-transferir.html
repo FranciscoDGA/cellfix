@@ -25,218 +25,63 @@
 </script>
 </head><body>
 <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
-<header class="site-header"><div class="header-inner"><a href="../index.html" class="logo">CellFix<span>Brasil</span></a>
-<nav class="main-nav"><a href="../index.html">Início</a><a href="../categorias/erros-de-apps.html" class="active">Erros de Apps</a><a href="../categorias/android.html">Android</a><a href="../categorias/iphone.html">iPhone</a><a href="../categorias/configuracoes-e-dicas.html">Configurações e Dicas</a><a href="../categorias/apps-populares.html">Apps Populares</a><a href="../sobre.html">Sobre</a><a href="../contato.html">Contato</a></nav>
-<button class="search-btn" id="search-btn" aria-label="Buscar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
-<button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div></header>
-<div class="search-overlay" id="search-overlay"><form class="search-form" role="search"><input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" aria-label="Buscar"><button type="submit">Buscar</button><button type="button" class="close-search" id="close-search" aria-label="Fechar busca">&times;</button></form></div>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">CF</div>
+        <div class="logo-text">CellFix<span>Brasil</span></div>
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <div class="nav-links">
+          <a href="../index.html">Início</a>
+          <a href="../categorias/erros-de-apps.html" class="active">Erros de Apps</a>
+          <a href="../categorias/android.html">Android</a>
+          <a href="../categorias/iphone.html">iPhone</a>
+          <a href="../categorias/configuracoes-e-dicas.html">Configurações</a>
+          <a href="../categorias/apps-populares.html">Apps Populares</a>
+          <a href="../sobre.html">Sobre</a>
+          <a href="../contato.html">Contato</a>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <button class="search-toggle" id="search-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="mobile-menu-btn" id="hamburger" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-<main id="conteudo-principal" class="article-container">
-<article class="article-content">
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="../index.html">Início</a>
+      <a href="../categorias/erros-de-apps.html" class="active">Erros de Apps</a>
+      <a href="../categorias/android.html">Android</a>
+      <a href="../categorias/iphone.html">iPhone</a>
+      <a href="../categorias/configuracoes-e-dicas.html">Configurações</a>
+      <a href="../categorias/apps-populares.html">Apps Populares</a>
+      <a href="../sobre.html">Sobre</a>
+      <a href="../contato.html">Contato</a>
+    </div>
+  </nav>
 
-<h1>Bradesco: app trava ao transferir — como resolver sem ir à agência</h1>
-
-<div class="article-meta">
-<span class="author">Por CellFix Brasil</span>
-<span class="date">20 de agosto de 2026</span>
-<span class="category">Erros de Apps</span>
-<span class="read-time">⏱ 7 min de leitura</span>
-</div>
-
-<p class="lead">Você está tentando fazer uma transferência pelo app do Bradesco e ele trava, trava, trava... A tela congela, o botão não responde, e você fica com medo de que o dinheiro tenha saído duas vezes. Calma — na maioria das vezes, o problema tem solução rápida e você <strong>não precisa ir à agência</strong>.</p>
-
-<p>Nesse artigo, vou te mostrar exatamente o que fazer quando o app do Bradesco trava na hora de transferir. São <strong>7 soluções testadas</strong> que resolvem o problema em até 90% dos casos. Vamos nessa?</p>
-
-<div class="tip-box">
-<strong>💡 Dica rápida:</strong> Se a transferência já foi confirmada pelo app (mesmo que tenha travado depois), <strong>não tente fazer de novo</strong>. Verifique seu extrato antes de repetir a operação para evitar duplicidade.
-</div>
-
-<h2>Por que o app do Bradesco trava na hora de transferir?</h2>
-
-<p>Antes de resolver, é importante entender o motivo. O app do Bradesco pode travar por vários motivos, e entender qual é o seu ajuda a escolher a solução certa. Veja as causas mais comuns:</p>
-
-<ul>
-<li><strong>Cache corrompido</strong> — dados temporários acumulados que bagunçam o funcionamento do app</li>
-<li><strong>App desatualizado</strong> — versões antigas têm bugs que foram corrigidos em atualizações</li>
-<li><strong>Conexão de internet instável</strong> — o app precisa de conexão estável para validar transferências</li>
-<li><strong>Servidor do Bradesco sobrecarregado</strong> — em horários de pico, o sistema pode engasgar</li>
-<li><strong>Memória do celular cheia</strong> — o app não tem espaço suficiente para processar a operação</li>
-<li><strong>Conflito com outros apps</strong> — algum app de segurança ou VPN pode estar bloqueando</li>
-<li><strong>Problema com o token ou chave de segurança</strong> — o sistema de autenticação pode estar com defeito</li>
-</ul>
-
-<h2>7 soluções para o app do Bradesco travar ao transferir</h2>
-
-<h3>Solução 1: Limpe o cache do app</h3>
-
-<p>O cache é a causa número um de travamentos em apps bancários. Veja como limpar:</p>
-
-<div class="numbered-steps">
-<strong>Passo a passo:</strong>
-<ol>
-<li>Vá em <strong>Ajustes → Aplicativos → Bradesco</strong></li>
-<li>Toque em <strong>Armazenamento</strong></li>
-<li>Toque em <strong>Limpar cache</strong> (NÃO apague os dados, apenas o cache)</li>
-<li>Abra o app novamente e tente a transferência</li>
-</ol>
-</div>
-
-<p><strong>Tempo estimado:</strong> 2 minutos. Essa solução resolve o problema em cerca de 40% dos casos.</p>
-
-<h3>Solução 2: Atualize o app</h3>
-
-<p>O Bradesco lança atualizações frequentes para corrigir bugs. Se você está com uma versão antiga, pode ser o motivo do travamento.</p>
-
-<div class="numbered-steps">
-<ol>
-<li>Abra a <strong>Google Play Store</strong> (Android) ou <strong>App Store</strong> (iPhone)</li>
-<li>Pesquise por <strong>"Bradesco"</strong></li>
-<li>Se houver botão <strong>"Atualizar"</strong>, clique nele</li>
-<li>Após a atualização, reinicie o celular antes de usar o app</li>
-</ol>
-</div>
-
-<div class="warning-box">
-<strong>⚠️ Atenção:</strong> Não desinstale o app para atualizar — apenas clique em "Atualizar" na loja de apps. Desinstalar pode apagar suas configurações salvas.
-</div>
-
-<h3>Solução 3: Verifique sua conexão de internet</h3>
-
-<p>Uma internet lenta ou instável é vilã silenciosa. O app do Bradesco precisa de uma conexão firme para validar transferências no servidor.</p>
-
-<ul>
-<li>Se estiver no <strong>Wi-Fi</strong>, tente trocar para os <strong>dados móveis</strong> (ou vice-versa)</li>
-<li>Reinicie o roteador se estiver em casa</li>
-<li>Evite fazer transferências usando VPN —许多 bancos bloqueiam isso</li>
-<li>Teste sua velocidade em <strong>speedtest.net</strong> — o mínimo recomendado é 5 Mbps</li>
-</ul>
-
-<h3>Solução 4: Tente em outro horário</h3>
-
-<p>O servidor do Bradesco fica mais lento em horários de pico. Se você está tentando fazer transferência entre <strong>10h e 14h</strong> ou <strong>17h e 19h</strong>, pode ser esse o problema.</p>
-
-<p>Tente fazer a transferência em horários alternativos:</p>
-
-<table>
-<thead>
-<tr><th>Horário</th><th>Tráfego</th><th>Recomendação</th></tr>
-</thead>
-<tbody>
-<tr><td>06h — 08h</td><td>Baixo</td><td>✅ Ótimo horário</td></tr>
-<tr><td>10h — 14h</td><td>Alto</td><td>❌ Evitar</td></tr>
-<tr><td>15h — 16h</td><td>Médio</td><td>⚠️ Pode funcionar</td></tr>
-<tr><td>17h — 19h</td><td>Alto</td><td>❌ Evitar</td></tr>
-<tr><td>20h — 22h</td><td>Baixo</td><td>✅ Bom horário</td></tr>
-</tbody>
-</table>
-
-<h3>Solução 5: Libere espaço no celular</h3>
-
-<p>Seu celular precisa de espaço livre para o app funcionar corretamente. Apps bancários são pesados e precisam de pelo menos <strong>500 MB livres</strong>.</p>
-
-<div class="numbered-steps">
-<ol>
-<li>Vá em <strong>Ajustes → Armazenamento</strong></li>
-<li>Verifique quanto espaço está livre</li>
-<li>Apague apps que você não usa</li>
-<li>Limpe fotos e vídeos antigos (transfira para o computador primeiro)</li>
-<li>Reinicie o celular e teste o app</li>
-</ol>
-</div>
-
-<h3>Solução 6: Desative apps de segurança temporariamente</h3>
-
-<p>Alguns apps de antivírus ou bloqueadores podem interferir no funcionamento do app bancário. Tente desativar temporariamente:</p>
-
-<ul>
-<li>Antivírus (Avast, AVG, Kaspersky)</li>
-<li>Apps de VPN</li>
-<li>Bloqueadores de anúncio</li>
-<li>Apps de limpeza (Clean Master, etc.)</li>
-</ul>
-
-<div class="tip-box">
-<strong>💡 Dica:</strong> Após testar, reative seus apps de segurança. Nunca fique sem proteção!
-</div>
-
-<h3>Solução 7: Use o site do Bradesco como alternativa</h3>
-
-<p>Se nada funcionar, você pode fazer a transferência pelo site do Bradesco no navegador do celular. É uma alternativa válida e segura.</p>
-
-<div class="numbered-steps">
-<ol>
-<li>Abra o navegador (Chrome, Safari, etc.)</li>
-<li>Acesse <strong>banco.bradesco</strong></li>
-<li>Faça login com sua senha</li>
-<li>Realize a transferência normalmente</li>
-<li>Após concluída, limpe o histórico por segurança</li>
-</ol>
-</div>
-
-<h2>Tabela comparativa: qual solução escolher?</h2>
-
-<table>
-<thead>
-<tr><th>Solução</th><th>Dificuldade</th><th>Tempo</th><th>Taxa de sucesso</th></tr>
-</thead>
-<tbody>
-<tr><td>Limpar cache</td><td>Fácil</td><td>2 min</td><td>40%</td></tr>
-<tr><td>Atualizar app</td><td>Fácil</td><td>5 min</td><td>25%</td></tr>
-<tr><td>Verificar internet</td><td>Fácil</td><td>3 min</td><td>15%</td></tr>
-<tr><td>Trocar horário</td><td>Fácil</td><td>—</td><td>10%</td></tr>
-<tr><td>Liberar espaço</td><td>Médio</td><td>10 min</td><td>5%</td></tr>
-<tr><td>Desativar segurança</td><td>Fácil</td><td>2 min</td><td>3%</td></tr>
-<tr><td>Usar site</td><td>Fácil</td><td>5 min</td><td>2%</td></tr>
-</tbody>
-</table>
-
-<h2>Quando procurar uma agência?</h2>
-
-<p>Se você já tentou todas as soluções e o problema continua, pode ser um caso mais sério que envolve:</p>
-
-<ul>
-<li>Bloqueio da sua conta por motivos de segurança</li>
-<li>Problema com sua chave PIX ou token</li>
-<li>Falha no sistema do Bradesco que afeta apenas sua conta</li>
-<li>Suspição de fraude ou acesso não autorizado</li>
-</ul>
-
-<p>Nesses casos, ligue para a central de atendimento do Bradesco: <strong>0800 727 9966</strong> (gratuito). Eles podem resolver pela ligação em muitos casos, sem necessidade de ir à agência.</p>
-
-<h2>FAQ — Perguntas frequentes</h2>
-
-<details>
-<summary>O dinheiro saiu duas vezes da minha conta?</summary>
-<p>Se a transferência aparece como "processando" ou "pendente" no app, <strong>não tente fazer de novo</strong>. O Bradesco geralmente não duplica transferências — se travou depois da confirmação, provavelmente só uma foi processada. Verifique seu extrato em 30 minutos. Se realmente saiu duas vezes, entre em contato com a central imediatamente.</p>
-</details>
-
-<details>
-<summary>O app trava só na hora de confirmar com senha?</summary>
-<p>Esse é um problema comum e geralmente está relacionado ao <strong>token de segurança</strong>. Tente atualizar o app, limpar o cache e, se necessário, reconfigure seu token em Configurações → Segurança dentro do app.</p>
-</details>
-
-<details>
-<summary>Posso usar o app em dois celulares ao mesmo tempo?</summary>
-<p>Não. O Bradesco permite o app em apenas <strong>um celular por vez</strong>. Se você mudou de celular, precisará desativar o dispositivo antigo antes de ativar o novo. Isso pode ser feito pelo site ou ligando para a central.</p>
-</details>
-
-<details>
-<summary>O app trava só para PIX?</summary>
-<p>Se o problema é específico com PIX, pode ser uma falha no sistema de chaves PIX do Bradesco. Tente gerar uma nova chave PIX ou usar o código QR em vez de digitar os dados manualmente.</p>
-</details>
-
-<details>
-<summary>Meu app trava e mostra erro "serviço indisponível"?</summary>
-<p>Esse erro indica que o servidor do Bradesco está temporariamente fora do ar ou sobrecarregado. Aguarde 15-30 minutos e tente novamente. Se persistir por mais de 2 horas, pode ser uma manutenção programada — verifique no site oficial.</p>
-</details>
-
-<div class="author-box">
-<div class="author-info">
-<strong>CellFix Brasil</strong>
-<p>Somos especialistas em resolver problemas de celulares, apps e tecnologia do dia a dia. Conteúdo testado e atualizado para ajudar você de verdade.</p>
-</div>
-</div>
-
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-box">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" class="search-input" aria-label="Buscar">
+        <button type="button" class="search-close" id="close-search" aria-label="Fechar busca">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
 <div class="related-articles">
 <h3>Artigos relacionados</h3>
 <ul>
@@ -249,10 +94,74 @@
 </article>
 </main>
 
-<footer class="site-footer"><div class="footer-inner">
-<p>&copy; 2026 CellFix Brasil. Todos os direitos reservados.</p>
-<nav class="footer-nav"><a href="../sobre.html">Sobre</a><a href="../contato.html">Contato</a><a href="../politica-de-privacidade.html">Privacidade</a></nav>
-</div></footer>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">CF</div>
+            <div class="logo-text">CellFix<span>Brasil</span></div>
+          </a>
+          <p>Resolvendo problemas de celulares e apps para milhões de brasileiros desde 2026.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+            <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Categorias</h4>
+          <nav class="footer-links">
+            <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+            <a href="../categorias/android.html">Android</a>
+            <a href="../categorias/iphone.html">iPhone</a>
+            <a href="../categorias/configuracoes-e-dicas.html">Configurações e Dicas</a>
+            <a href="../categorias/apps-populares.html">Apps Populares</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-heading">Institucional</h4>
+          <nav class="footer-links">
+            <a href="../sobre.html">Sobre Nós</a>
+            <a href="../autor.html">Autor</a>
+            <a href="../contato.html">Contato</a>
+            <a href="../busca.html">Busca</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <nav class="footer-links">
+            <a href="../politica-de-privacidade.html">Política de Privacidade</a>
+            <a href="../termos-de-uso.html">Termos de Uso</a>
+            <a href="../politica-de-cookies.html">Política de Cookies</a>
+            <a href="#" onclick="openCookieSettings(); return false;">Gerenciar Cookies</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CellFix Brasil. Todos os direitos reservados. Feito com dedicação para ajudar milhões de brasileiros.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner-inner">
+      <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="../politica-de-cookies.html">Política de Cookies</a>.</p>
+      <div class="cookie-banner-actions">
+        <button id="accept-cookies" class="cookie-btn cookie-btn-accept">Aceitar Todos</button>
+        <button id="reject-cookies" class="cookie-btn cookie-btn-decline">Rejeitar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <button class="skip-to-top" id="skip-to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+>
 <script src="../js/main.js"></script>
 </body></html>
 

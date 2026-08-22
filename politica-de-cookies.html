@@ -20,221 +20,139 @@
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
+  <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
 
-  <header class="site-header" id="site-header">
+    <header class="site-header" id="site-header">
     <div class="header-inner">
-      <a href="index.html" class="logo">CellFix<span>Brasil</span></a>
+      <a href="index.html" class="logo">
+        <div class="logo-icon">CF</div>
+        <div class="logo-text">CellFix<span>Brasil</span></div>
+      </a>
       <nav class="main-nav" id="main-nav">
-        <a href="index.html">Início</a>
-        <a href="categorias/erros-de-apps.html">Erros de Apps</a>
-        <a href="categorias/android.html">Android</a>
-        <a href="categorias/iphone.html">iPhone</a>
-        <a href="categorias/configuracoes-e-dicas.html">Configurações e Dicas</a>
-        <a href="categorias/apps-populares.html">Apps Populares</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
+        <div class="nav-links">
+          <a href="index.html">Início</a>
+          <a href="categorias/erros-de-apps.html">Erros de Apps</a>
+          <a href="categorias/android.html">Android</a>
+          <a href="categorias/iphone.html">iPhone</a>
+          <a href="categorias/configuracoes-e-dicas.html">Configurações</a>
+          <a href="categorias/apps-populares.html">Apps Populares</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+        </div>
       </nav>
-      <button class="search-btn" id="search-btn" aria-label="Buscar">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </button>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header-actions">
+        <button class="search-toggle" id="search-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="mobile-menu-btn" id="hamburger" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
     </div>
   </header>
 
-  <div class="search-overlay" id="search-overlay">
-    <form class="search-form" role="search">
-      <input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" aria-label="Buscar">
-      <button type="submit">Buscar</button>
-      <button type="button" class="close-search" id="close-search" aria-label="Fechar busca">&times;</button>
-    </form>
-  </div>
-
-  <nav class="breadcrumbs" aria-label="Breadcrumb">
-    <div class="container">
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="mobile-nav-links">
       <a href="index.html">Início</a>
-      <span aria-hidden="true">&gt;</span>
-      <span aria-current="page">Política de Cookies</span>
+      <a href="categorias/erros-de-apps.html">Erros de Apps</a>
+      <a href="categorias/android.html">Android</a>
+      <a href="categorias/iphone.html">iPhone</a>
+      <a href="categorias/configuracoes-e-dicas.html">Configurações</a>
+      <a href="categorias/apps-populares.html">Apps Populares</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
     </div>
   </nav>
 
-  <main id="main-content">
-    <article class="page-content">
-      <div class="container">
-        <h1>Política de Cookies</h1>
-
-        <section class="about-section">
-          <h2>1. O que são Cookies</h2>
-          <p>Cookies são pequenos arquivos de texto que são armazenados no seu dispositivo (computador, tablet ou smartphone) quando você visita um site. Eles são amplamente utilizados para fazer os sites funcionarem de maneira mais eficiente, bem como fornecer informações aos proprietários do site.</p>
-          <p>Os cookies permitem que o site reconheça o seu dispositivo e lembre de informações sobre a sua visita, como preferências de idioma, configurações de exibição e outros dados que tornam a sua experiência mais conveniente.</p>
-        </section>
-
-        <section class="about-section">
-          <h2>2. Tipos de Cookies</h2>
-          <p>Os cookies podem ser classificados de diferentes formas:</p>
-          <ul>
-            <li><strong>Quanto à duração:</strong> Podem ser <em>cookies de sessão</em> (temporários, apagados ao fechar o navegador) ou <em>cookies persistentes</em> (permanecem no dispositivo por um período determinado).</li>
-            <li><strong>Quanto à origem:</strong> Podem ser <em>cookies próprios</em> (definidos pelo CellFix Brasil) ou <em>cookies de terceiros</em> (definidos por serviços externos que utilizamos).</li>
-            <li><strong>Quanto à finalidade:</strong> Podem ser <em>necessários</em> (essenciais para o funcionamento do site), <em>analíticos</em> (coletam dados sobre o uso do site) ou <em>publicitários</em> (exibem anúncios personalizados).</li>
-          </ul>
-        </section>
-
-        <section class="about-section">
-          <h2>3. Cookies Necessários</h2>
-          <p>Os cookies necessários são essenciais para o funcionamento correto do site. Sem eles, funcionalidades básicas como navegação e acesso a áreas seguras não funcionariam adequadamente.</p>
-          <h3>Cookies de Sessão</h3>
-          <p>São temporários e são apagados automaticamente quando você fecha o navegador. Eles são utilizados para manter o estado da sua navegação durante a visita ao site.</p>
-          <h3>Cookies de Preferências</h3>
-          <p>Permitem que o site lembre de escolhas que você fez anteriormente, como preferências de idioma, configurações de exibição ou outras opções personalizáveis. Esses cookies permanecem no seu dispositivo por um período mais longo.</p>
-        </section>
-
-        <section class="about-section">
-          <h2>4. Cookies Analíticos</h2>
-          <p>Utilizamos cookies analíticos para coletar informações sobre como os visitantes utilizam o nosso site. Esses dados nos ajudam a entender melhor o comportamento dos usuários, identificar áreas de melhoria e otimizar o conteúdo.</p>
-          <p>Atualmente, estamos preparados para utilizar o <strong>Google Analytics</strong> para análise de tráfego. O Google Analytics coleta informações de forma agregada, incluindo:</p>
-          <ul>
-            <li>Número de visitantes do site</li>
-            <li>Páginas mais visitadas</li>
-            <li>Tempo de permanência nas páginas</li>
-            <li>Fonte de tráfego (como você chegou ao site)</li>
-            <li>Dispositivo e navegador utilizado</li>
-          </ul>
-          <p>As informações coletadas pelo Google Analytics são anônimas e não identificam individualmente nenhum visitante. Para mais detalhes, consulte a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a>.</p>
-        </section>
-
-        <section class="about-section">
-          <h2>5. Cookies Publicitários</h2>
-          <p>Estamos preparados para utilizar cookies publicitários através do <strong>Google AdSense</strong>, que exibe anúncios relevantes com base nos seus interesses e navegação anterior. Esses cookies são utilizados para:</p>
-          <ul>
-            <li>Exibir anúncios personalizados com base no seu histórico de navegação</li>
-            <li>Limitar o número de vezes que um mesmo anúncio é exibido</li>
-            <li>Avaliar a eficácia das campanhas publicitárias</li>
-            <li>Melhorar a relevância dos anúncios exibidos</li>
-          </ul>
-          <p>O Google AdSense utiliza cookies para permitir que parceiros de publicidade exibam anúncios com base nas visitas anteriores do usuário a outros sites na internet. Para mais informações, consulte a <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Política de Publicidade do Google</a>.</p>
-        </section>
-
-        <section class="about-section">
-          <h2>6. Cookies de Terceiros</h2>
-          <p>Além dos cookies próprios do CellFix Brasil, utilizamos serviços de terceiros que podem definir cookies no seu dispositivo. Esses serviços incluem:</p>
-          <ul>
-            <li><strong>Google Analytics:</strong> Para análise de tráfego e comportamento dos usuários</li>
-            <li><strong>Google AdSense:</strong> Para exibição de anúncios personalizados</li>
-            <li><strong>Redes Sociais:</strong> Botões de compartilhamento que permitem compartilhar conteúdo em plataformas como Facebook, Twitter e outras</li>
-          </ul>
-          <p>Não temos controle sobre os cookies definidos por terceiros. Recomendamos que consulte as políticas de privacidade desses serviços para mais informações sobre como eles utilizam cookies.</p>
-        </section>
-
-        <section class="about-section">
-          <h2>7. Como Controlar os Cookies</h2>
-          <h3>Através do Navegador</h3>
-          <p>Você pode controlar e gerenciar cookies através das configurações do seu navegador. A maioria dos navegadores permite:</p>
-          <ul>
-            <li>Visualizar quais cookies estão armazenados</li>
-            <li>Excluir cookies individualmente ou todos de uma vez</li>
-            <li>Bloquear cookies de terceiros</li>
-            <li>Configurar alertas quando cookies forem definidos</li>
-          </ul>
-          <p>As configurações variam de navegador para navegador. Consulte a ajuda do seu navegador para mais informações:</p>
-          <ul>
-            <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
-            <li><a href="https://support.mozilla.org/pt-BR/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
-            <li><a href="https://support.apple.com/pt-br/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a></li>
-            <li><a href="https://support.microsoft.com/pt-br/microsoft-edge/excluir-cookies-no-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></li>
-          </ul>
-          <h3>Através do Nosso Banner</h3>
-          <p>Ao acessar o CellFix Brasil pela primeira vez, você verá um banner de cookies que permite aceitar, rejeitar ou personalizar suas preferências. Você pode alterar essas preferências a qualquer momento clicando no link "Gerenciar cookies" no rodapé do site.</p>
-        </section>
-
-        <section class="about-section">
-          <h2>8. Impacto de Desativar Cookies</h2>
-          <p>Caso você opte por desativar ou bloquear cookies, algumas funcionalidades do site podem ficar indisponíveis ou apresentar limitações. Especificamente:</p>
-          <ul>
-            <li>Preferências e configurações personalizadas não serão salvas</li>
-            <li>Áreas restritas do site podem não funcionar corretamente</li>
-            <li>A experiência de navegação pode ser prejudicada</li>
-            <li>Anúncios exibidos podem não ser relevantes aos seus interesses</li>
-          </ul>
-          <p>Recomendamos manter os cookies habilitados para aproveitar ao máximo a experiência de navegação no CellFix Brasil.</p>
-        </section>
-
-        <section class="about-section">
-          <h2>9. Atualizações desta Política</h2>
-          <p>Esta Política de Cookies pode ser atualizada periodicamente para refletir mudanças em nossas práticas ou por outros motivos operacionais, legais ou regulatórios. Recomendamos que os leitores revisem esta página regularmente para se manterem informados sobre como utilizamos cookies.</p>
-          <p>Alterações significativas nesta política serão comunicadas através de aviso em destaque no site.</p>
-        </section>
-
-        <section class="about-section">
-          <h2>10. Contato</h2>
-          <p>Se você tiver dúvidas, sugestões ou preocupações relacionadas a esta Política de Cookies, entre em contato conosco através do nosso formulário de <a href="contato.html">Contato</a> ou pelo e-mail: <strong>contato@cellfixbrasil.com.br</strong>.</p>
-        </section>
-
-        <aside class="author-box">
-          <div class="author-info">
-            <div class="author-avatar">
-              <span>CB</span>
-            </div>
-            <div class="author-details">
-              <h3>Equipe CellFix Brasil</h3>
-              <p>Equipe dedicada a resolver problemas de celulares e apps para milhões de brasileiros.</p>
-            </div>
-          </div>
-        </aside>
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-box">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" class="search-input" aria-label="Buscar">
+        <button type="button" class="search-close" id="close-search" aria-label="Fechar busca">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</aside>
       </div>
     </article>
   </main>
 
+  
+  
   <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-col">
-        <a href="index.html" class="logo">CellFix<span>Brasil</span></a>
-        <p>Resolvendo problemas de celulares e apps para milhões de brasileiros.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">CF</div>
+            <div class="logo-text">CellFix<span>Brasil</span></div>
+          </a>
+          <p>Resolvendo problemas de celulares e apps para milhões de brasileiros desde 2026.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+            <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Categorias</h4>
+          <nav class="footer-links">
+            <a href="categorias/erros-de-apps.html">Erros de Apps</a>
+            <a href="categorias/android.html">Android</a>
+            <a href="categorias/iphone.html">iPhone</a>
+            <a href="categorias/configuracoes-e-dicas.html">Configurações e Dicas</a>
+            <a href="categorias/apps-populares.html">Apps Populares</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-heading">Institucional</h4>
+          <nav class="footer-links">
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="autor.html">Autor</a>
+            <a href="contato.html">Contato</a>
+            <a href="busca.html">Busca</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <nav class="footer-links">
+            <a href="politica-de-privacidade.html">Política de Privacidade</a>
+            <a href="termos-de-uso.html">Termos de Uso</a>
+            <a href="politica-de-cookies.html">Política de Cookies</a>
+            <a href="#" onclick="openCookieSettings(); return false;">Gerenciar Cookies</a>
+          </nav>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Navegação</h4>
-        <nav>
-          <a href="index.html">Início</a>
-          <a href="sobre.html">Sobre</a>
-          <a href="contato.html">Contato</a>
-        </nav>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CellFix Brasil. Todos os direitos reservados. Feito com dedicação para ajudar milhões de brasileiros.</p>
       </div>
-      <div class="footer-col">
-        <h4>Categorias</h4>
-        <nav>
-          <a href="categorias/erros-de-apps.html">Erros de Apps</a>
-          <a href="categorias/android.html">Android</a>
-          <a href="categorias/iphone.html">iPhone</a>
-          <a href="categorias/configuracoes-e-dicas.html">Configurações e Dicas</a>
-          <a href="categorias/apps-populares.html">Apps Populares</a>
-        </nav>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <nav>
-          <a href="politica-de-privacidade.html">Política de Privacidade</a>
-          <a href="termos-de-uso.html">Termos de Uso</a>
-          <a href="politica-de-cookies.html">Política de Cookies</a>
-          <a href="#" onclick="openCookieSettings(); return false;">Gerenciar cookies</a>
-        </nav>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 CellFix Brasil. Todos os direitos reservados.</p>
     </div>
   </footer>
 
   <div class="cookie-banner" id="cookie-banner">
-    <div class="cookie-content">
+    <div class="cookie-banner-inner">
       <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="politica-de-cookies.html">Política de Cookies</a>.</p>
-      <div class="cookie-actions">
-        <button id="accept-cookies" class="btn-primary">Aceitar</button>
-        <button id="reject-cookies" class="btn-secondary">Rejeitar</button>
-        <button onclick="openCookieSettings()" class="btn-link">Personalizar</button>
+      <div class="cookie-banner-actions">
+        <button id="accept-cookies" class="cookie-btn cookie-btn-accept">Aceitar Todos</button>
+        <button id="reject-cookies" class="cookie-btn cookie-btn-decline">Rejeitar</button>
       </div>
     </div>
   </div>
+</div>
+
+  <button class="skip-to-top" id="skip-to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+>
+</div>
 
   <script src="js/main.js"></script>
   <script src="js/search.js"></script>

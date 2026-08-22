@@ -23,241 +23,64 @@
 </head>
 <body>
   <a class="skip-link" href="#conteudo-principal">Ir para o conte&uacute;do</a>
-  <header class="site-header" id="site-header">
+    <header class="site-header" id="site-header">
     <div class="header-inner">
-      <a href="../index.html" class="logo">CellFix<span>Brasil</span></a>
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">CF</div>
+        <div class="logo-text">CellFix<span>Brasil</span></div>
+      </a>
       <nav class="main-nav" id="main-nav">
-        <a href="../index.html">In&iacute;cio</a>
-        <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
-        <a href="../categorias/android.html">Android</a>
-        <a href="../categorias/iphone.html" class="active">iPhone</a>
-        <a href="../categorias/configuracoes-e-dicas.html">Configura&ccedil;&otilde;es e Dicas</a>
-        <a href="../categorias/apps-populares.html">Apps Populares</a>
-        <a href="../sobre.html">Sobre</a>
-        <a href="../contato.html">Contato</a>
+        <div class="nav-links">
+          <a href="../index.html">Início</a>
+          <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+          <a href="../categorias/android.html">Android</a>
+          <a href="../categorias/iphone.html" class="active">iPhone</a>
+          <a href="../categorias/configuracoes-e-dicas.html">Configurações</a>
+          <a href="../categorias/apps-populares.html">Apps Populares</a>
+          <a href="../sobre.html">Sobre</a>
+          <a href="../contato.html">Contato</a>
+        </div>
       </nav>
-      <button class="search-btn" id="search-btn" aria-label="Buscar">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </button>
-      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <div class="header-actions">
+        <button class="search-toggle" id="search-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="mobile-menu-btn" id="hamburger" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
     </div>
   </header>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="../index.html">Início</a>
+      <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+      <a href="../categorias/android.html">Android</a>
+      <a href="../categorias/iphone.html" class="active">iPhone</a>
+      <a href="../categorias/configuracoes-e-dicas.html">Configurações</a>
+      <a href="../categorias/apps-populares.html">Apps Populares</a>
+      <a href="../sobre.html">Sobre</a>
+      <a href="../contato.html">Contato</a>
+    </div>
+  </nav>
+
   <div class="search-overlay" id="search-overlay">
-    <form class="search-form" role="search">
-      <input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" aria-label="Buscar">
-      <button type="submit">Buscar</button>
-      <button type="button" class="close-search" id="close-search" aria-label="Fechar busca">&times;</button>
-    </form>
+    <div class="search-box">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" class="search-input" aria-label="Buscar">
+        <button type="button" class="search-close" id="close-search" aria-label="Fechar busca">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
   </div>
-
-  <main id="conteudo-principal">
-    <div class="container">
-      <nav class="breadcrumbs" aria-label="breadcrumb">
-        <a href="../index.html">In&iacute;cio</a> &gt;
-        <a href="../categorias/iphone.html">iPhone</a> &gt;
-        <span>Face ID parou de funcionar</span>
-      </nav>
-
-      <article class="article-page">
-        <header class="article-header">
-          <h1>Face ID parou de funcionar no iPhone 14 &mdash; como consertar</h1>
-          <div class="article-meta">
-            <span class="author">Por <strong>Equipe CellFix Brasil</strong></span>
-            <time datetime="2026-08-16">16 ago 2026</time>
-            <span class="updated">Atualizado em <time datetime="2026-08-22">22 ago 2026</time></span>
-            <span class="reading-time">6 min de leitura</span>
-          </div>
-        </header>
-
-        <figure class="article-featured-image">
-          <img src="../imagens/artigos/face-id-parou-de-funcionar.svg" alt="iPhone 14 com erro no Face ID" width="1200" height="630" loading="eager">
-          <figcaption>Face ID nao funciona mais? Veja como resolver no iPhone 14</figcaption>
-        </figure>
-
-        <div class="article-body">
-          <p>Quando o <strong>Face ID parou de funcionar no iPhone 14</strong>, a frustracao e enorme. Voce depende dessa funcionalidade para desbloquear o celular, autorizar compras e acessar apps bancarios. Sem o Face ID, o iPhone perde grande parte da sua conveniencia.</p>
-
-          <p>A boa noticia e que na maioria dos casos o problema pode ser resolvido sem levar o aparelho a uma assistencia tecnica. Apresentamos <strong>5 solucoes comprovadas</strong> que devem restaurar o funcionamento do Face ID no seu iPhone 14.</p>
-
-          <h2>Por que o Face ID para de funcionar?</h2>
-
-          <ul>
-            <li><strong>Sujeira na camera TrueDepth</strong>  poeira ou gordura podem obstruir os sensores</li>
-            <li><strong>Bug no sistema iOS</strong>  atualizacoes podem conter erros que afetam o reconhecimento facial</li>
-            <li><strong>Configuracoes incorretas</strong>  opcoes desativadas podem impedir o funcionamento</li>
-            <li><strong>Problema na camera TrueDepth</strong>  o modulo de camera pode estar com defeito</li>
-            <li><strong>Caixa protetora inadequada</strong>  capas grossas podem obstruir a camera frontal</li>
-          </ul>
-
-          <h2>Solucao 1: Limpe a camera TrueDepth</h2>
-
-          <p>O passo mais simples e limpar a camera TrueDepth do iPhone 14. A camera frontal fica no entalhe (notch) na parte superior da tela e e responsavel pelo reconhecimento facial.</p>
-
-          <div class="steps">
-            <ol>
-              <li><strong>Passo 1:</strong> Desligue o iPhone pressionando o botao lateral + volume</li>
-              <li><strong>Passo 2:</strong> Use um pano de microfibra limpo e seco para limpar a area da camera frontal</li>
-              <li><strong>Passo 3:</strong> Se houver sujeira persistente, use um pouco de alcool isopropilico no pano</li>
-              <li><strong>Passo 4:</strong> Aguarde secar completamente antes de ligar o iPhone</li>
-              <li><strong>Passo 5:</strong> Teste o Face ID novamente</li>
-            </ol>
-          </div>
-
-          <div class="tip-box">
-            <strong>Dica:</strong> Se voce usa capa protetora, verifique se ela nao esta cobrindo a camera frontal. Capas com notch muito profundo podem impedir que o Face ID funcione corretamente.
-          </div>
-
-          <h2>Solucao 2: Delete e reconfigure o Face ID</h2>
-
-          <p>Se a limpeza nao resolveu, excluir o Face ID atual e configurar novamente pode corrigir corrupcoes no reconhecimento.</p>
-
-          <div class="steps">
-            <ol>
-              <li><strong>Passo 1:</strong> Abra os <em>Ajustes</em></li>
-              <li><strong>Passo 2:</strong> Toque em <em>Face ID e Codigo</em></li>
-              <li><strong>Passo 3:</strong> Digite seu codigo de acesso</li>
-              <li><strong>Passo 4:</strong> Toque em <em>Resetar Face ID</em></li>
-              <li><strong>Passo 5:</strong> Toque em <em>Configurar Face ID</em></li>
-              <li><strong>Passo 6:</strong> Siga as instrucoes na tela para escanear seu rosto novamente</li>
-            </ol>
-          </div>
-
-          <div class="warning-box">
-            <strong>Atencao:</strong> Ao resetar o Face ID, todos os dados faciais salvos serao apagados. Voce precisara configurar novamente e reativar o Face ID em apps que utilizam essa funcionalidade, como apps bancarios.
-          </div>
-
-          <h2>Solucao 3: Atualize o iOS</h2>
-
-          <p>A Apple lança atualizacoes frequentes do iOS que corrigem bugs e melhoram a estabilidade do sistema. Se o Face ID parou de funcionar apos uma atualizacao, pode ser que um bug ja tenha sido corrigido em uma versao mais recente.</p>
-
-          <div class="steps">
-            <ol>
-              <li><strong>Passo 1:</strong> Conecte o iPhone ao carregador ou verifique se tem pelo menos 50% de bateria</li>
-              <li><strong>Passo 2:</strong> Conecte-se a uma rede WiFi estavel</li>
-              <li><strong>Passo 3:</strong> Acesse <em>Ajustes &gt; Geral &gt; Atualizacao de Software</em></li>
-              <li><strong>Passo 4:</strong> Se houver uma atualizacao disponivel, baixe e instale</li>
-              <li><strong>Passo 5:</strong> Aguarde a instalacao ser concluida e o iPhone reiniciar</li>
-            </ol>
-          </div>
-
-          <h2>Solucao 4: Verifique as configuracoes do Face ID</h2>
-
-          <p>E possivel que alguma configuracao tenha sido alterada acidentalmente, impedindo o Face ID de funcionar.</p>
-
-          <div class="steps">
-            <ol>
-              <li><strong>Passo 1:</strong> Acesse <em>Ajustes &gt; Face ID e Codigo</em></li>
-              <li><strong>Passo 2:</strong> Verifique se <em>iPhone Desbloquear</em> esta ativado</li>
-              <li><strong>Passo 3:</strong> Verifique se <em>Preencher Senhas</em> esta ativado</li>
-              <li><strong>Passo 4:</strong> Verifique se <em>App Store</em> esta ativado</li>
-              <li><strong>Passo 5:</strong> Verifique se <em>Apple Pay</em> esta ativado</li>
-              <li><strong>Passo 6:</strong> Ative a opcao <em>Requer Atencao para Face ID</em> se quiser mais seguranca</li>
-            </ol>
-          </div>
-
-          <div class="error-box">
-            <strong>Importante:</strong> Se a opcao iPhone Desbloquear estiver desativada, o Face ID nao funcionara para desbloquear o celular. Verifique se todas as opcoes desejadas estao ativadas.
-          </div>
-
-          <h2>Solucao 5: Redefina todas as configuracoes</h2>
-
-          <p>Como ultimo recurso antes de procurar assistencia tecnica, redefina todas as configuracoes do iPhone 14. Isso restaura todas as configuracoes para o padrao de fabrica sem apagar seus dados pessoais.</p>
-
-          <div class="steps">
-            <ol>
-              <li><strong>Passo 1:</strong> Acesse <em>Ajustes</em></li>
-              <li><strong>Passo 2:</strong> Toque em <em>Geral</em></li>
-              <li><strong>Passo 3:</strong> Toque em <em>Transferir ou Redefinir o iPhone</em></li>
-              <li><strong>Passo 4:</strong> Toque em <em>Redefinir</em></li>
-              <li><strong>Passo 5:</strong> Selecione <em>Redefinir Todas as Configuracoes</em></li>
-              <li><strong>Passo 6:</strong> Digite sua senha e confirme</li>
-            </ol>
-          </div>
-
-          <p>Apos a redefinicao, configure o Face ID novamente em <em>Ajustes &gt; Face ID e Codigo</em>.</p>
-
-          <h2>Tabela: Solucoes por situacao</h2>
-
-          <table>
-            <thead>
-              <tr>
-                <th>Situacao</th>
-                <th>Solucao recomendada</th>
-                <th>Dificuldade</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Face ID parou de repente</td>
-                <td>Limpar camera + resetar Face ID</td>
-                <td>Facil</td>
-              </tr>
-              <tr>
-                <td>Face ID nao funciona apos queda</td>
-                <td>Limpar camera + verificar configuracoes</td>
-                <td>Facil</td>
-              </tr>
-              <tr>
-                <td>Face ID nao funciona apos atualizacao</td>
-                <td>Atualizar iOS + resetar Face ID</td>
-                <td>Facil</td>
-              </tr>
-              <tr>
-                <td>Face ID desativou sozinho</td>
-                <td>Verificar configuracoes + redefinir</td>
-                <td>Media</td>
-              </tr>
-              <tr>
-                <td>Nenhuma solucao funcionou</td>
-                <td>Assistencia tecnica Apple</td>
-                <td>-</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h2>Quando procurar assistencia tecnica?</h2>
-
-          <p>Se apos tentar todas as solucoes o Face ID continuar sem funcionar, o problema pode ser de hardware. Nesse caso:</p>
-
-          <ul>
-            <li>Verifique se o iPhone 14 ainda esta em garantia pela Apple</li>
-            <li>Leve o aparelho a uma Apple Store ou Assistencia Autorizada Apple</li>
-            <li>Nao tente abrir o iPhone por conta propria, pois isso anula a garantia</li>
-            <li>Informe todos os passos que ja tentou para agilizar o atendimento</li>
-          </ul>
-
-          <p>Problemas de hardware no Face ID geralmente envolvem defeito no modulo da camera TrueDepth, que e um componente delicado e requer reparo profissional.</p>
-
-          <h2>Perguntas Frequentes</h2>
-
-          <div class="faq-section">
-            <div class="faq-item">
-              <h3>O Face ID funciona com mascara no iPhone 14?</h3>
-              <p>Sim, a partir do iOS 15.4, o iPhone 14 suporta Face ID com mascara. Para ativar, va em Ajustes &gt; Face ID e Codigo e ative a opcao Face ID com Mascara. Voce precisara escanear seu rosto novamente com a mascara posta.</p>
-            </div>
-
-            <div class="faq-item">
-              <h3>Posso usar o Face ID para desbloquear apps bancarios?</h3>
-              <p>Sim, a maioria dos apps bancarios brasileiros suporta Face ID para autenticacao. Apos reconfigurar o Face ID, voce precisara reativar o reconhecimento facial dentro de cada app bancario individualmente.</p>
-            </div>
-
-            <div class="faq-item">
-              <h3>Quanto custa consertar o Face ID na Apple?</h3>
-              <p>Se o iPhone estiver fora de garantia e sem AppleCare+, o reparo do modulo TrueDepth pode custar entre R$ 1.200 e R$ 2.000. Com AppleCare+, o custo e significativamente menor, geralmente em torno de R$ 200.</p>
-            </div>
-
-            <div class="faq-item">
-              <h3>O Face ID pode ser hackeado por fotos ou videos?</h3>
-              <p>Nao. O Face ID usa projecao de pontos infravermelhos e leitura de profundidade para reconhecer seu rosto. Fotos, videos e ate mascaras de silicone nao conseguem enganar o sistema.</p>
-            </div>
-
-            <div class="faq-item">
-              <h3>Quantas faces o Face ID pode salvar?</h3>
-              <p>O Face ID pode salvar apenas um rosto por vez. No entanto, existe a opcao Aparicao Alternativa que permite salvar uma segunda aparencia, como quando voce usa oculos ou chapeu.</p>
-            </div>
-          </div>
-
-          <div class="author-box">
+<div class="author-box">
             <div class="author-avatar">
               <img src="../imagens/avatar-equipe.webp" alt="Equipe CellFix Brasil" width="80" height="80" loading="lazy">
             </div>
@@ -289,53 +112,75 @@
     </div>
   </main>
 
+  
+  
   <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-col">
-        <a href="../index.html" class="logo">CellFix<span>Brasil</span></a>
-        <p>Resolvendo problemas de celulares e apps para milhoes de brasileiros.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">CF</div>
+            <div class="logo-text">CellFix<span>Brasil</span></div>
+          </a>
+          <p>Resolvendo problemas de celulares e apps para milhões de brasileiros desde 2026.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+            <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Categorias</h4>
+          <nav class="footer-links">
+            <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+            <a href="../categorias/android.html">Android</a>
+            <a href="../categorias/iphone.html">iPhone</a>
+            <a href="../categorias/configuracoes-e-dicas.html">Configurações e Dicas</a>
+            <a href="../categorias/apps-populares.html">Apps Populares</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-heading">Institucional</h4>
+          <nav class="footer-links">
+            <a href="../sobre.html">Sobre Nós</a>
+            <a href="../autor.html">Autor</a>
+            <a href="../contato.html">Contato</a>
+            <a href="../busca.html">Busca</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <nav class="footer-links">
+            <a href="../politica-de-privacidade.html">Política de Privacidade</a>
+            <a href="../termos-de-uso.html">Termos de Uso</a>
+            <a href="../politica-de-cookies.html">Política de Cookies</a>
+            <a href="#" onclick="openCookieSettings(); return false;">Gerenciar Cookies</a>
+          </nav>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Navegacao</h4>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="../sobre.html">Sobre</a>
-          <a href="../contato.html">Contato</a>
-        </nav>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CellFix Brasil. Todos os direitos reservados. Feito com dedicação para ajudar milhões de brasileiros.</p>
       </div>
-      <div class="footer-col">
-        <h4>Categorias</h4>
-        <nav>
-          <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
-          <a href="../categorias/android.html">Android</a>
-          <a href="../categorias/iphone.html">iPhone</a>
-          <a href="../categorias/configuracoes-e-dicas.html">Configuracoes e Dicas</a>
-          <a href="../categorias/apps-populares.html">Apps Populares</a>
-        </nav>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <nav>
-          <a href="../politica-de-privacidade.html">Politica de Privacidade</a>
-          <a href="../termos-de-uso.html">Termos de Uso</a>
-          <a href="../politica-de-cookies.html">Politica de Cookies</a>
-        </nav>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 CellFix Brasil. Todos os direitos reservados.</p>
     </div>
   </footer>
 
   <div class="cookie-banner" id="cookie-banner">
-    <div class="cookie-content">
-      <p>Utilizamos cookies para melhorar sua experiencia. Ao continuar navegando, voce concorda com nossa <a href="../politica-de-cookies.html">Politica de Cookies</a>.</p>
-      <div class="cookie-actions">
-        <button id="accept-cookies" class="btn-primary">Aceitar</button>
-        <button id="reject-cookies" class="btn-secondary">Rejeitar</button>
+    <div class="cookie-banner-inner">
+      <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="../politica-de-cookies.html">Política de Cookies</a>.</p>
+      <div class="cookie-banner-actions">
+        <button id="accept-cookies" class="cookie-btn cookie-btn-accept">Aceitar Todos</button>
+        <button id="reject-cookies" class="cookie-btn cookie-btn-decline">Rejeitar</button>
       </div>
     </div>
   </div>
+</div>
+
+  <button class="skip-to-top" id="skip-to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+>
+</div>
 
   <script src="../js/main.js"></script>
   <script src="../js/search.js"></script>

@@ -75,283 +75,64 @@
 </head>
 <body>
   <a class="skip-link" href="#conteudo-principal">Ir para o conte&uacute;do</a>
-  <header class="site-header" id="site-header">
+    <header class="site-header" id="site-header">
     <div class="header-inner">
-      <a href="../index.html" class="logo">CellFix<span>Brasil</span></a>
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">CF</div>
+        <div class="logo-text">CellFix<span>Brasil</span></div>
+      </a>
       <nav class="main-nav" id="main-nav">
-        <a href="../index.html">In&iacute;cio</a>
-        <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
-        <a href="../categorias/android.html" class="active">Android</a>
-        <a href="../categorias/iphone.html">iPhone</a>
-        <a href="../categorias/configuracoes-e-dicas.html">Configura&ccedil;&otilde;es e Dicas</a>
-        <a href="../categorias/apps-populares.html">Apps Populares</a>
-        <a href="../sobre.html">Sobre</a>
-        <a href="../contato.html">Contato</a>
+        <div class="nav-links">
+          <a href="../index.html">Início</a>
+          <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+          <a href="../categorias/android.html" class="active">Android</a>
+          <a href="../categorias/iphone.html">iPhone</a>
+          <a href="../categorias/configuracoes-e-dicas.html">Configurações</a>
+          <a href="../categorias/apps-populares.html">Apps Populares</a>
+          <a href="../sobre.html">Sobre</a>
+          <a href="../contato.html">Contato</a>
+        </div>
       </nav>
-      <button class="search-btn" id="search-btn" aria-label="Buscar">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </button>
-      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <div class="header-actions">
+        <button class="search-toggle" id="search-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="mobile-menu-btn" id="hamburger" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
     </div>
   </header>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="../index.html">Início</a>
+      <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+      <a href="../categorias/android.html" class="active">Android</a>
+      <a href="../categorias/iphone.html">iPhone</a>
+      <a href="../categorias/configuracoes-e-dicas.html">Configurações</a>
+      <a href="../categorias/apps-populares.html">Apps Populares</a>
+      <a href="../sobre.html">Sobre</a>
+      <a href="../contato.html">Contato</a>
+    </div>
+  </nav>
+
   <div class="search-overlay" id="search-overlay">
-    <form class="search-form" role="search">
-      <input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" aria-label="Buscar">
-      <button type="submit">Buscar</button>
-      <button type="button" class="close-search" id="close-search" aria-label="Fechar busca">&times;</button>
-    </form>
+    <div class="search-box">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" class="search-input" aria-label="Buscar">
+        <button type="button" class="search-close" id="close-search" aria-label="Fechar busca">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
   </div>
-
-  <main id="conteudo-principal">
-    <div class="container">
-      <nav class="breadcrumbs" aria-label="breadcrumb">
-        <a href="../index.html">In&iacute;cio</a> &gt;
-        <a href="../categorias/android.html">Android</a> &gt;
-        <span>Android travando ap&oacute;s atualiza&ccedil;&atilde;o</span>
-      </nav>
-
-      <article class="article-page">
-        <header class="article-header">
-          <h1>Celular Android travando ap&oacute;s atualiza&ccedil;&atilde;o Android 14 &mdash; o que fazer</h1>
-          <div class="article-meta">
-            <span class="author">Por <strong>Equipe CellFix Brasil</strong></span>
-            <time datetime="2026-08-22">22 ago 2026</time>
-            <span class="updated">Atualizado em <time datetime="2026-08-22">22 ago 2026</time></span>
-            <span class="reading-time">8 min de leitura</span>
-          </div>
-        </header>
-
-        <figure class="article-featured-image">
-          <img src="../imagens/artigos/celular-android-travando-apos-atualizacao.svg" alt="Celular Android com tela de travamento após atualização do sistema" width="1200" height="630" loading="eager">
-          <figcaption>Travamentos após atualização são comuns, mas na maioria das vezes têm solu&ccedil;&atilde;o</figcaption>
-        </figure>
-
-        <div class="article-body">
-
-          <p>Atualizou seu celular para o Android 14 e agora ele trava o tempo todo? N&atilde;o se preocupe &mdash; voc&ecirc; n&atilde;o &eacute; o &uacute;nico. Milhares de usu&aacute;rios relatam lentid&atilde;o, apps travando e aquecimento excessivo ap&oacute;s instalar a nova vers&atilde;o do sistema. O bom &eacute; que, na maioria dos casos, o problema &eacute; tempor&aacute;rio e tem solu&ccedil;&atilde;o.</p>
-
-          <p>Neste guia completo, vamos explicar por que o Android 14 causa travamentos e mostrar 7 solu&ccedil;&otilde;es testadas que v&atilde;o ajudar seu celular a funcionar de novo. Confira!</p>
-
-          <h2>Por que o Android 14 causa travamentos?</h2>
-
-          <p>Antes de partir para as solu&ccedil;&otilde;es, &eacute; importante entender o que est&aacute; acontecendo. O Android 14 &eacute; uma atualiza&ccedil;&atilde;o significativa que traz mudan&ccedil;as profundas no n&uacute;cleo do sistema. Quando voc&ecirc; instala uma atualiza&ccedil;&atilde;o dessa magnitude, v&aacute;rias coisas acontecem nos bastidores:</p>
-
-          <ul>
-            <li><strong>Recompila&ccedil;&atilde;o de apps:</strong> O sistema recompila todos os aplicativos instalados para otimiz&aacute;-los para a nova vers&atilde;o. Esse processo &eacute; pesado e consome muita CPU e bateria.</li>
-            <li><strong>Indexa&ccedil;&atilde;o de arquivos:</strong> O Android reindexa todos os seus arquivos, fotos, v&iacute;deos e documentos. Isso pode levar v&aacute;rias horas.</li>
-            <li><strong>Otimiza&ccedil;&atilde;o de bateria:</strong> O sistema aprende seus padr&otilde;es de uso novamente, o que pode causar drainage anormal de bateria nos primeiros dias.</li>
-            <li><strong>Cache obsoleto:</strong> Arquivos de cache da vers&atilde;o anterior podem conflitar com o novo sistema, causando erros e travamentos.</li>
-          </ul>
-
-          <div class="tip-box">
-            <strong>Dica importante:</strong> Na maioria dos casos, os travamentos ap&oacute;s atualiza&ccedil;&atilde;o desaparecem ap&oacute;s 24 a 72 horas, quando o sistema termina todas as otimiza&ccedil;&otilde;es em segundo plano. Se o problema persistir ap&oacute;s 3 dias, siga as solu&ccedil;&otilde;es abaixo.
-          </div>
-
-          <h2>Solu&ccedil;&atilde;o 1: Aguarde a estabiliza&ccedil;&atilde;o do sistema</h2>
-
-          <p>A solu&ccedil;&atilde;o mais simples &eacute; tamb&eacute;m a mais subestimada: d&ecirc; tempo ao celular. Ap&oacute;s uma atualiza&ccedil;&atilde;o grande como o Android 14, o sistema precisa de tempo para:</p>
-
-          <ol>
-            <li>Recompilar todos os aplicativos instalados</li>
-            <li>Reindexar m&iacute;dia e arquivos</li>
-            <li>Otimizar o uso de bateria</li>
-            <li>Aplicar patches de seguran&ccedil;a em segundo plano</li>
-          </ol>
-
-          <p>Durante esse per&iacute;odo, &eacute; normal perceber o celular mais quente do que o habitual e com a bateria sendo consumida mais r&aacute;pido. Evite usar o celular para tarefas pesadas nas primeiras 48 horas ap&oacute;s a atualiza&ccedil;&atilde;o.</p>
-
-          <h2>Solu&ccedil;&atilde;o 2: Limpe a cache da parti&ccedil;&atilde;o</h2>
-
-          <p>Limpar a cache da parti&ccedil;&atilde;o &eacute; uma das solu&ccedil;&otilde;es mais eficazes para travamentos p&oacute;s-atualiza&ccedil;&atilde;o. Esse procedimento remove arquivos tempor&aacute;rios que podem estar conflitando com o novo sistema, sem apagar seus dados pessoais.</p>
-
-          <h3>Como limpar a cache da parti&ccedil;&atilde;o (passo a passo)</h3>
-
-          <ol>
-            <li><strong>Desligue o celular</strong> completamente pressionando o bot&atilde;o de liga/desliga por 10 segundos.</li>
-            <li><strong>Entre no modo Recovery:</strong> Pressione e segure simultaneamente o bot&atilde;o de <strong>Volume Para Cima</strong> + <strong>Bot&atilde;o de Ligar</strong>. Quando o logo da marca aparecer, solte os bot&otilde;es.</li>
-            <li><strong>Navegue at&eacute; &ldquo;Wipe cache partition&rdquo;</strong> usando os bot&otilde;es de volume para selecionar e o bot&atilde;o de liga para confirmar.</li>
-            <li><strong>Confirme a opera&ccedil;&atilde;o</strong> selecionando &ldquo;Yes&rdquo; e aguarde o processo terminar.</li>
-            <li><strong>Selecione &ldquo;Reboot system now&rdquo;</strong> para reiniciar o celular.</li>
-          </ol>
-
-          <div class="warning-box">
-            <strong>Aten&ccedil;&atilde;o:</strong> O processo para entrar no modo Recovery pode variar conforme a marca do celular. Samsung usa Volume Cima + Bixby + Ligar. Motorola usa Volume Baixo + Ligar. Xiaomi usa Volume Cima + Ligar. Pesquise o modelo espec&iacute;fico do seu aparelho se n&atilde;o conseguir entrar no Recovery.
-          </div>
-
-          <h2>Solu&ccedil;&atilde;o 3: Verifique o espa&ccedil;o em disco</h2>
-
-          <p>Atualiza&ccedil;&otilde;es do Android 14 ocupam entre 2 GB e 5 GB de espa&ccedil;o. Se seu celular j&aacute; estava com pouco armazenamento, a atualiza&ccedil;&atilde;o pode ter deixado o sistema sem espa&ccedil;o suficiente para funcionar corretamente.</p>
-
-          <h3>Como verificar e liberar espa&ccedil;o</h3>
-
-          <ol>
-            <li>V&aacute; em <strong>Ajustes &gt; Armazenamento</strong>.</li>
-            <li>Verifique quanto espa&ccedil;o est&aacute; dispon&iacute;vel. O ideal &eacute; ter pelo menos 10% livre.</li>
-            <li>Apague apps que voc&ecirc; n&atilde;o usa mais.</li>
-            <li>Limpe o cache dos apps mais pesados (WhatsApp, Instagram, TikTok).</li>
-            <li>Transfira fotos e v&iacute;deos para a nuvem ou um cart&atilde;o SD.</li>
-          </ol>
-
-          <div class="tip-box">
-            <strong>Dica:</strong> Apps como WhatsApp e Instagram podem acumular gigabytes de dados cacheados. Limpar o cache desses apps pode liberar muito espa&ccedil;o sem afetar seus dados pessoais.
-          </div>
-
-          <h2>Solu&ccedil;&atilde;o 4: Desative ou reduza as anima&ccedil;&otilde;es</h2>
-
-          <p>O Android 14 introduce anima&ccedil;&otilde;es mais elaboradas e fluidas, mas elas consomem mais recursos de processamento. Em celulares com menos de 4 GB de RAM, essas anima&ccedil;&otilde;es podem causar travamentos percept&iacute;veis.</p>
-
-          <h3>Como desativar anima&ccedil;&otilde;es no Android 14</h3>
-
-          <ol>
-            <li>V&aacute; em <strong>Ajustes &gt; Sobre o telefone</strong>.</li>
-            <li>Toque 7 vezes no <strong>N&uacute;mero da compila&ccedil;&atilde;o</strong> para ativar as Op&ccedil;&otilde;es do Desenvolvedor.</li>
-            <li>Volte a <strong>Ajustes &gt; Sistema &gt; Op&ccedil;&otilde;es do Desenvolvedor</strong>.</li>
-            <li>Procure as op&ccedil;&otilde;es: <strong>Escala de anima&ccedil;&atilde;o da janela</strong>, <strong>Escala de transi&ccedil;&atilde;o-animador</strong> e <strong>Dura&ccedil;&atilde;o da escala de anima&ccedil;&atilde;o</strong>.</li>
-            <li>Altere todas para <strong>0,5x</strong> ou <strong>Desligado</strong>.</li>
-          </ol>
-
-          <p>Essa altera&ccedil;&atilde;o pode dar uma sensa&ccedil;&atilde;o imediata de velocidade ao navegar pelo sistema.</p>
-
-          <h2>Solu&ccedil;&atilde;o 5: Desinstale apps problem&aacute;ticos</h2>
-
-          <p>Alguns apps ainda n&atilde;o foram otimizados para o Android 14 e podem causar conflitos. Se voc&ecirc; notou que o travamento come&ccedil;ou ap&oacute;s instalar ou atualizar um app espec&iacute;fico, ele pode ser o culpado.</p>
-
-          <h3>Como identificar apps problem&aacute;ticos</h3>
-
-          <ol>
-            <li>V&aacute; em <strong>Ajustes &gt; Bateria &gt; Uso da bateria</strong>.</li>
-            <li>Verifique quais apps est&atilde;o consumindo mais bateria que o normal.</li>
-            <li>Desinstale ou desative esses apps temporariamente.</li>
-            <li>Verifique se o travamento persiste.</li>
-          </ol>
-
-          <p>Procure atualiza&ccedil;&otilde;es para esses apps na Google Play Store. Os desenvolvedores costumam lançar corre&ccedil;&otilde;es r&aacute;pido ap&oacute;s grandes atualiza&ccedil;&otilde;es do Android.</p>
-
-          <h2>Solu&ccedil;&atilde;o 6: Redefina as configura&ccedil;&otilde;es de rede</h2>
-
-          <p>Em alguns casos, as configura&ccedil;&otilde;es de rede herdadas da vers&atilde;o anterior do Android podem causar instabilidade geral no sistema. Redefinir as configura&ccedil;&otilde;es de rede resolve esse problema.</p>
-
-          <ol>
-            <li>V&aacute; em <strong>Ajustes &gt; Sistema &gt; Redefinir op&ccedil;&otilde;es</strong>.</li>
-            <li>Selecione <strong>Redefinir configura&ccedil;&otilde;es de Wi-Fi, dados m&oacute;veis e Bluetooth</strong>.</li>
-            <li>Confirme a opera&ccedil;&atilde;o.</li>
-          </ol>
-
-          <div class="warning-box">
-            <strong>Aten&ccedil;&atilde;o:</strong> Essa a&ccedil;&atilde;o apagar&aacute; todas as redes Wi-Fi salvas, emparelhamentos Bluetooth e configura&ccedil;&otilde;es de dados m&oacute;veis. Voc&ecirc; precisar&aacute; reconectar-se a todas as redes ap&oacute;s o procedimento.
-          </div>
-
-          <h2>Solu&ccedil;&atilde;o 7: Restore de f&aacute;brica (&uacute;ltimo recurso)</h2>
-
-          <p>Se nenhuma das solu&ccedil;&otilde;es acima funcionou, o restore de f&aacute;brica pode ser necess&aacute;rio. Esse procedimento apaga todos os seus dados e restaura o celular para as configura&ccedil;&otilde;es originais de f&aacute;brica com o Android 14 j&aacute; instalado.</p>
-
-          <div class="error-box">
-            <strong>Importante:</strong> Fa&ccedil;a um backup completo de todos os seus dados antes de prosseguir. Fotos, contatos, mensagens e apps ser&atilde;o apagados. Use o Google Backup ou transfira manualmente para um computador.
-          </div>
-
-          <h3>Como fazer restore de f&aacute;brica no Android 14</h3>
-
-          <ol>
-            <li>V&aacute; em <strong>Ajustes &gt; Sistema &gt; Redefinir op&ccedil;&otilde;es</strong>.</li>
-            <li>Selecione <strong>Apagar todos os dados (restore de f&aacute;brica)</strong>.</li>
-            <li>Confirme sua senha ou padr&atilde;o de desbloqueio.</li>
-            <li>Toque em <strong>Apagar tudo</strong> e aguarde o processo.</li>
-          </ol>
-
-          <p>O celular reiniciar&aacute; como novo. Fa&ccedil;a a configura&ccedil;&atilde;o inicial e teste se o travamento foi resolvido antes de restaurar seus dados do backup.</p>
-
-          <h2>Tabela de solu&ccedil;&otilde;es por gravidade</h2>
-
-          <table>
-            <thead>
-              <tr>
-                <th>Solu&ccedil;&atilde;o</th>
-                <th>Gravidade do problema</th>
-                <th>Tempo estimado</th>
-                <th>Risco de perda de dados</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Aguardar estabiliza&ccedil;&atilde;o</td>
-                <td>Leve</td>
-                <td>24-72 horas</td>
-                <td>Nenhum</td>
-              </tr>
-              <tr>
-                <td>Limpar cache da parti&ccedil;&atilde;o</td>
-                <td>Leve a Moderado</td>
-                <td>10 minutos</td>
-                <td>Nenhum</td>
-              </tr>
-              <tr>
-                <td>Verificar espa&ccedil;o em disco</td>
-                <td>Leve a Moderado</td>
-                <td>15 minutos</td>
-                <td>Baixo</td>
-              </tr>
-              <tr>
-                <td>Desativar anima&ccedil;&otilde;es</td>
-                <td>Leve</td>
-                <td>5 minutos</td>
-                <td>Nenhum</td>
-              </tr>
-              <tr>
-                <td>Desinstalar apps problem&aacute;ticos</td>
-                <td>Moderado</td>
-                <td>10 minutos</td>
-                <td>Baixo</td>
-              </tr>
-              <tr>
-                <td>Redefinir configura&ccedil;&otilde;es de rede</td>
-                <td>Moderado</td>
-                <td>5 minutos</td>
-                <td>Nenhum (perde redes salvas)</td>
-              </tr>
-              <tr>
-                <td>Restore de f&aacute;brica</td>
-                <td>Grave</td>
-                <td>30-60 minutos</td>
-                <td>Alto (backup obrigat&oacute;rio)</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h2>Perguntas frequentes (FAQ)</h2>
-
-          <div class="faq-section">
-            <div class="faq-item">
-              <h3>Por que meu celular travou depois de atualizar para o Android 14?</h3>
-              <p>O Android 14 traz mudan&ccedil;as significativas no sistema. Nos primeiros dias, o celular realiza otimiza&ccedil;&otilde;es em segundo plano, indexa arquivos e recompila apps. Esse processo consome recursos e pode causar travamentos tempor&aacute;rios que desaparecem em 24 a 72 horas.</p>
-            </div>
-
-            <div class="faq-item">
-              <h3>Limpar a cache da parti&ccedil;&atilde;o resolve o travamento p&oacute;s-atualiza&ccedil;&atilde;o?</h3>
-              <p>Sim. Limpar a cache da parti&ccedil;&atilde;o remove arquivos tempor&aacute;rios antigos que podem conflitar com o novo sistema. &Eacute; uma das solu&ccedil;&otilde;es mais eficazes e seguras, pois n&atilde;o apaga seus dados pessoais.</p>
-            </div>
-
-            <div class="faq-item">
-              <h3>Devo fazer restore de f&aacute;brica logo ap&oacute;s a atualiza&ccedil;&atilde;o?</h3>
-              <p>N&atilde;o imediatamente. Tente antes solu&ccedil;&otilde;es mais leves como limpar cache, reiniciar o dispositivo e verificar o espa&ccedil;o em disco. O restore de f&aacute;brica deve ser o &uacute;ltimo recurso, pois apaga todos os seus dados.</p>
-            </div>
-
-            <div class="faq-item">
-              <h3>O travamento pode ser causado por falta de espa&ccedil;o em disco?</h3>
-              <p>Sim. Atualiza&ccedil;&otilde;es do Android 14 ocupam entre 2 GB e 5 GB. Se o celular j&aacute; estava com pouco espa&ccedil;o, a atualiza&ccedil;&atilde;o pode ter deixado o sistema sem espa&ccedil;o suficiente para funcionar corretamente, causando lentid&atilde;o e travamentos.</p>
-            </div>
-
-            <div class="faq-item">
-              <h3>Desativar anima&ccedil;&otilde;es melhora o desempenho ap&oacute;s atualiza&ccedil;&atilde;o?</h3>
-              <p>Sim. As anima&ccedil;&otilde;es do Android 14 s&atilde;o mais elaboradas e consomem mais recursos. Desativ&aacute;-las ou reduzi-las pode dar uma sensa&ccedil;&atilde;o significativa de velocidade, especialmente em aparelhos com menos de 4 GB de RAM.</p>
-            </div>
-
-            <div class="faq-item">
-              <h3>Quanto tempo devo esperar antes de me preocupar com o travamento?</h3>
-              <p>Aguarde pelo menos 48 a 72 horas ap&oacute;s a atualiza&ccedil;&atilde;o. Muitos travamentos s&atilde;o tempor&aacute;rios e se resolvem sozinhos. Se ap&oacute;s 3 dias o problema persistir, comece a aplicar as solu&ccedil;&otilde;es deste guia.</p>
-            </div>
-          </div>
-
-          <div class="author-box">
+<div class="author-box">
             <div class="author-info">
               <strong>Equipe CellFix Brasil</strong>
               <p>Somos especialistas em solu&ccedil;&otilde;es para celulares Android e iPhone. Nosso objetivo &eacute; ajudar voc&ecirc; a resolver problemas do seu aparelho de forma r&aacute;pida e segura, sem precisar de t&eacute;cnico.</p>
@@ -372,7 +153,74 @@
     </div>
   </main>
 
+  
+  
   <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">CF</div>
+            <div class="logo-text">CellFix<span>Brasil</span></div>
+          </a>
+          <p>Resolvendo problemas de celulares e apps para milhões de brasileiros desde 2026.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+            <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Categorias</h4>
+          <nav class="footer-links">
+            <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+            <a href="../categorias/android.html">Android</a>
+            <a href="../categorias/iphone.html">iPhone</a>
+            <a href="../categorias/configuracoes-e-dicas.html">Configurações e Dicas</a>
+            <a href="../categorias/apps-populares.html">Apps Populares</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-heading">Institucional</h4>
+          <nav class="footer-links">
+            <a href="../sobre.html">Sobre Nós</a>
+            <a href="../autor.html">Autor</a>
+            <a href="../contato.html">Contato</a>
+            <a href="../busca.html">Busca</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <nav class="footer-links">
+            <a href="../politica-de-privacidade.html">Política de Privacidade</a>
+            <a href="../termos-de-uso.html">Termos de Uso</a>
+            <a href="../politica-de-cookies.html">Política de Cookies</a>
+            <a href="#" onclick="openCookieSettings(); return false;">Gerenciar Cookies</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CellFix Brasil. Todos os direitos reservados. Feito com dedicação para ajudar milhões de brasileiros.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner-inner">
+      <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="../politica-de-cookies.html">Política de Cookies</a>.</p>
+      <div class="cookie-banner-actions">
+        <button id="accept-cookies" class="cookie-btn cookie-btn-accept">Aceitar Todos</button>
+        <button id="reject-cookies" class="cookie-btn cookie-btn-decline">Rejeitar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <button class="skip-to-top" id="skip-to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+>
     <div class="container">
       <p>&copy; 2026 CellFix Brasil. Todos os direitos reservados.</p>
       <nav class="footer-nav">

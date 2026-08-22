@@ -23,312 +23,64 @@
 </head>
 <body>
   <a class="skip-link" href="#conteudo-principal">Ir para o conte&uacute;do</a>
-  <header class="site-header" id="site-header">
+    <header class="site-header" id="site-header">
     <div class="header-inner">
-      <a href="../index.html" class="logo">CellFix<span>Brasil</span></a>
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">CF</div>
+        <div class="logo-text">CellFix<span>Brasil</span></div>
+      </a>
       <nav class="main-nav" id="main-nav">
-        <a href="../index.html">In&iacute;cio</a>
-        <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
-        <a href="../categorias/android.html">Android</a>
-        <a href="../categorias/iphone.html" class="active">iPhone</a>
-        <a href="../categorias/configuracoes-e-dicas.html">Configura&ccedil;&otilde;es e Dicas</a>
-        <a href="../categorias/apps-populares.html">Apps Populares</a>
-        <a href="../sobre.html">Sobre</a>
-        <a href="../contato.html">Contato</a>
+        <div class="nav-links">
+          <a href="../index.html">Início</a>
+          <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+          <a href="../categorias/android.html">Android</a>
+          <a href="../categorias/iphone.html" class="active">iPhone</a>
+          <a href="../categorias/configuracoes-e-dicas.html">Configurações</a>
+          <a href="../categorias/apps-populares.html">Apps Populares</a>
+          <a href="../sobre.html">Sobre</a>
+          <a href="../contato.html">Contato</a>
+        </div>
       </nav>
-      <button class="search-btn" id="search-btn" aria-label="Buscar">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </button>
-      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <div class="header-actions">
+        <button class="search-toggle" id="search-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="mobile-menu-btn" id="hamburger" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
     </div>
   </header>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="../index.html">Início</a>
+      <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+      <a href="../categorias/android.html">Android</a>
+      <a href="../categorias/iphone.html" class="active">iPhone</a>
+      <a href="../categorias/configuracoes-e-dicas.html">Configurações</a>
+      <a href="../categorias/apps-populares.html">Apps Populares</a>
+      <a href="../sobre.html">Sobre</a>
+      <a href="../contato.html">Contato</a>
+    </div>
+  </nav>
+
   <div class="search-overlay" id="search-overlay">
-    <form class="search-form" role="search">
-      <input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" aria-label="Buscar">
-      <button type="submit">Buscar</button>
-      <button type="button" class="close-search" id="close-search" aria-label="Fechar busca">&times;</button>
-    </form>
+    <div class="search-box">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" class="search-input" aria-label="Buscar">
+        <button type="button" class="search-close" id="close-search" aria-label="Fechar busca">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
   </div>
-
-  <main id="conteudo-principal">
-    <div class="container">
-      <nav class="breadcrumbs" aria-label="breadcrumb">
-        <a href="../index.html">In&iacute;cio</a> &gt;
-        <a href="../categorias/iphone.html">iPhone</a> &gt;
-        <span>AirDrop n&atilde;o funciona</span>
-      </nav>
-
-      <article class="article-page">
-        <header class="article-header">
-          <h1>AirDrop n&atilde;o funciona no iPhone &mdash; como ativar corretamente</h1>
-          <div class="article-meta">
-            <span class="author">Por <strong>Equipe CellFix Brasil</strong></span>
-            <time datetime="2026-08-20">20 ago 2026</time>
-            <span class="updated">Atualizado em <time datetime="2026-08-22">22 ago 2026</time></span>
-            <span class="reading-time">6 min de leitura</span>
-          </div>
-        </header>
-
-        <figure class="article-featured-image">
-          <img src="../imagens/artigos/airdrop-nao-funciona.svg" alt="iPhone mostrando a tela do AirDrop com erro de conex&atilde;o" width="1200" height="630" loading="eager">
-          <figcaption>AirDrop n&atilde;o aparece ou n&atilde;o envia arquivos? Veja como resolver</figcaption>
-        </figure>
-
-        <div class="article-body">
-          <p>O AirDrop &eacute; uma das ferramentas mais &uacute;teis do iPhone para transferir fotos, v&iacute;deos e arquivos entre dispositivos Apple sem precisar de internet. Por&eacute;m, &eacute; comum encontrar problemas como o AirDrop que n&atilde;o aparece, n&atilde;o envia arquivos ou n&atilde;o recebe nada. Se voc&ecirc; est&aacute; enfrentando essa situa&ccedil;&atilde;o, n&atilde;o se preocupe &mdash; existem v&aacute;rias solu&ccedil;&otilde;es que voc&ecirc; pode tentar antes de procurar ajuda t&eacute;cnica.</p>
-
-          <p>Neste guia completo, vamos explicar todas as causas poss&iacute;veis do AirDrop n&atilde;o funcionar e mostrar passo a passo como corrigir o problema em qualquer modelo de iPhone, do iPhone 8 ao iPhone 15 Pro Max.</p>
-
-          <h2>Por que o AirDrop n&atilde;o funciona no iPhone?</h2>
-
-          <p>Antes de partirmos para as solu&ccedil;&otilde;es, &eacute; importante entender os motivos pelos quais o AirDrop pode parar de funcionar. As causas mais comuns incluem:</p>
-
-          <ul>
-            <li><strong>Wi-Fi ou Bluetooth desativados:</strong> O AirDrop depende de ambas as conex&otilde;es para funcionar corretamente.</li>
-            <li><strong>Modo Avi&atilde;o ativado:</strong> Quando o modo avi&atilde;o est&aacute; ligado, todas as conex&otilde;es sem fio s&atilde;o desativadas.</li>
-            <li><strong>Configura&ccedil;&atilde;o de recebimento incorreta:</strong> Se a op&ccedil;&atilde;o de receber estiver definida como &ldquo;Desativado&rdquo;, ningu&eacute;m conseguir&aacute; enviar arquivos para o seu iPhone.</li>
-            <li><strong>Restri&ccedil;&otilde;es de conte&uacute;do:</strong> Algumas configura&ccedil;&otilde;es de restri&ccedil;&atilde;o podem bloquear o AirDrop.</li>
-            <li><strong>Problema na rede:</strong> Configura&ccedil;&otilde;es de rede corrompidas podem impedir o funcionamento.</li>
-            <li><strong>Sistema operacional desatualizado:</strong> Vers&otilde;es antigas do iOS podem ter bugs que afetam o AirDrop.</li>
-          </ul>
-
-          <h2>Como ativar e configurar o AirDrop corretamente</h2>
-
-          <p>Primeiro, vamos garantir que o AirDrop esteja ativado e configurado corretamente no seu iPhone. Siga estes passos:</p>
-
-          <h3>Passo 1: Ative o Wi-Fi e o Bluetooth</h3>
-
-          <p>O AirDrop utiliza tanto o Wi-Fi quanto o Bluetooth para transferir arquivos. Verifique se ambas as conex&otilde;es est&atilde;o ativadas:</p>
-
-          <ol>
-            <li>Abra o <strong>Controle Central</strong> (deslize para baixo no canto superior direito da tela, ou para cima a partir da borda inferior em iPhones mais antigos).</li>
-            <li>Verifique se os &iacute;cones de <strong>Wi-Fi</strong> e <strong>Bluetooth</strong> est&atilde;o azuis (ativados).</li>
-            <li>Se estiverem cinza, toque neles para ativ&aacute;-los.</li>
-          </ol>
-
-          <div class="tip-box">
-            <strong>Dica:</strong> Voc&ecirc; tamb&eacute;m pode ativar o Wi-Fi e o Bluetooth pelas Configura&ccedil;&otilde;es &gt; Wi-Fi e Configura&ccedil;&otilde;es &gt; Bluetooth.
-          </div>
-
-          <h3>Passo 2: Configure quem pode enviar arquivos</h3>
-
-          <p>Agora, configure as prefer&ecirc;ncias de recebimento do AirDrop:</p>
-
-          <ol>
-            <li>V&aacute; para <strong>Configura&ccedil;&otilde;es</strong> &gt; <strong>Geral</strong> &gt; <strong>AirDrop</strong>.</li>
-            <li>Selecione uma das op&ccedil;&otilde;es:</li>
-        </ol>
-
-          <table>
-            <thead>
-              <tr>
-                <th>Op&ccedil;&atilde;o</th>
-                <th>Quando usar</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Recebimento Desativado</strong></td>
-                <td>Quando n&atilde;o quer receber arquivos de ningu&eacute;m</td>
-              </tr>
-              <tr>
-                <td><strong>Apenas Contatos</strong></td>
-                <td>Quer receber apenas de pessoas na sua lista de contatos</td>
-              </tr>
-              <tr>
-                <td><strong>Todos</strong></td>
-                <td>Quer receber de qualquer pessoa por perto (recomendado para testes)</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <ol start="3">
-            <li>Se estiver com problemas, selecione <strong>&ldquo;Todos&rdquo;</strong> temporariamente para testar se o AirDrop funciona.</li>
-          </ol>
-
-          <h3>Passo 3: Verifique se o AirDrop est&aacute; vis&iacute;vel</h3>
-
-          <p>Ap&oacute;s configurar, abra o Controle Central e toque longamente no bloco do Wi-Fi/Bluetooth. O AirDrop deve aparecer como uma op&ccedil;&atilde;o. Se n&atilde;o aparecer, pode haver um problema mais profundo.</p>
-
-          <h2>Solu&ccedil;&otilde;es para o AirDrop que n&atilde;o funciona</h2>
-
-          <p>Se mesmo ap&oacute;s a configura&ccedil;&atilde;o correta o AirDrop continua sem funcionar, tente as seguintes solu&ccedil;&otilde;es na ordem apresentada:</p>
-
-          <h3>1. Reinicie o iPhone</h3>
-
-          <p>Um rein&iacute;cio simples pode resolver v&aacute;rios problemas, incluindo o AirDrop. Para isso:</p>
-
-          <ol>
-            <li>Mantenha pressionado o bot&atilde;o lateral e um dos bot&otilde;es de volume at&eacute; aparecer a op&ccedil;&atilde;o &ldquo;Deslizar para desligar&rdquo;.</li>
-            <li>Deslize para desligar o iPhone.</li>
-            <li>Aguarde 30 segundos e ligue novamente segurando o bot&atilde;o lateral.</li>
-          </ol>
-
-          <h3>2. Desative e reative o Wi-Fi e o Bluetooth</h3>
-
-          <p>Uma alternativa r&aacute;pida &eacute; desativar e reativar as conex&otilde;es:</p>
-
-          <ol>
-            <li>V&aacute; para <strong>Configura&ccedil;&otilde;es</strong> &gt; <strong>Wi-Fi</strong> e desative.</li>
-            <li>V&aacute; para <strong>Configura&ccedil;&otilde;es</strong> &gt; <strong>Bluetooth</strong> e desative.</li>
-            <li>Aguarde 15 segundos.</li>
-            <li>Reative ambas as conex&otilde;es.</li>
-          </ol>
-
-          <h3>3. Desative o Modo Avi&atilde;o</h3>
-
-          <p>Se o Modo Avi&atilde;o estiver ativado, ele bloqueia todas as conex&otilde;es sem fio. Verifique:</p>
-
-          <ol>
-            <li>Abra o Controle Central.</li>
-            <li>Verifique se o &iacute;cone do <strong>Modo Avi&atilde;o</strong> (avi&atilde;o) est&aacute; laranja.</li>
-            <li>Se estiver, toque nele para desativar.</li>
-          </ol>
-
-          <h3>4. Verifique as Restri&ccedil;&otilde;es</h3>
-
-          <p>Em alguns casos, as Restri&ccedil;&otilde;es do iPhone podem bloquear o AirDrop:</p>
-
-          <ol>
-            <li>V&aacute; para <strong>Configura&ccedil;&otilde;es</strong> &gt; <strong>Tempo de Uso</strong> &gt; <strong>Restri&ccedil;&otilde;es de Conte&uacute;do e Privacidade</strong>.</li>
-            <li>Se estiver ativado, verifique se o AirDrop n&atilde;o est&aacute; bloqueado.</li>
-            <li>Se necess&aacute;rio, desative as restri&ccedil;&otilde;es temporariamente para testar.</li>
-          </ol>
-
-          <div class="warning-box">
-            <strong>Aten&ccedil;&atilde;o:</strong> Ao desativar as Restri&ccedil;&otilde;es de Conte&uacute;do e Privacidade, voc&ecirc; pode expor o iPhone a conte&uacute;do inadequado. Lembre-se de reativar ap&oacute;s o teste.
-          </div>
-
-          <h3>5. Redefina as configura&ccedil;&otilde;es de rede</h3>
-
-          <p>Se o problema persistir, redefina todas as configura&ccedil;&otilde;es de rede do iPhone. Isso n&atilde;o apaga seus dados, apenas restaura as configura&ccedil;&otilde;es de Wi-Fi, Bluetooth e rede para o padr&atilde;o de f&aacute;brica:</p>
-
-          <ol>
-            <li>V&aacute; para <strong>Configura&ccedil;&otilde;es</strong> &gt; <strong>Geral</strong> &gt; <strong>Transferir ou Redefinir iPhone</strong>.</li>
-            <li>Toque em <strong>Redefinir</strong> &gt; <strong>Redefinir Configura&ccedil;&otilde;es de Rede</strong>.</li>
-            <li>Confirme sua senha se solicitado.</li>
-            <li>O iPhone reiniciar&aacute; automaticamente.</li>
-          </ol>
-
-          <div class="tip-box">
-            <strong>Dica:</strong> Ap&oacute;s redefinir as configura&ccedil;&otilde;es de rede, voc&ecirc; precisar&aacute; reconectar-se a redes Wi-Fi inserindo as senhas novamente.
-          </div>
-
-          <h3>6. Atualize o iOS</h3>
-
-          <p>Apple frequentemente corrige bugs do AirDrop em atualiza&ccedil;&otilde;es do sistema. Verifique se h&aacute; uma atualiza&ccedil;&atilde;o dispon&iacute;vel:</p>
-
-          <ol>
-            <li>V&aacute; para <strong>Configura&ccedil;&otilde;es</strong> &gt; <strong>Geral</strong> &gt; <strong>Atualiza&ccedil;&atilde;o de Software</strong>.</li>
-            <li>Se houver uma atualiza&ccedil;&atilde;o dispon&iacute;vel, baixe e instale.</li>
-          </ol>
-
-          <h3>7. Reset de f&aacute;brica (&uacute;ltimo recurso)</h3>
-
-          <p>Se nenhuma das solu&ccedil;&otilde;es acima funcionou, o &uacute;ltimo recurso &eacute; fazer um reset de f&aacute;brica. <strong>Aten&ccedil;&atilde;o:</strong> isso apagar&aacute; todos os dados do iPhone, ent&atilde;o fa&ccedil;a um backup antes:</p>
-
-          <ol>
-            <li>V&aacute; para <strong>Configura&ccedil;&otilde;es</strong> &gt; <strong>Geral</strong> &gt; <strong>Transferir ou Redefinir iPhone</strong>.</li>
-            <li>Toque em <strong>Apagar Conte&uacute;do e Configura&ccedil;&otilde;es</strong>.</li>
-            <li>Siga as instru&ccedil;&otilde;es na tela.</li>
-          </ol>
-
-          <div class="warning-box">
-            <strong>Aten&ccedil;&atilde;o:</strong> O reset de f&aacute;brica &eacute; um processo irrevers&iacute;vel. Fa&ccedil;a um backup completo no iCloud ou no computador antes de prosseguir.
-          </div>
-
-          <h2>Tabela resumo: Solu&ccedil;&otilde;es do AirDrop</h2>
-
-          <table>
-            <thead>
-              <tr>
-                <th>Solu&ccedil;&atilde;o</th>
-                <th>Dificuldade</th>
-                <th>Tempo</th>
-                <th>Efic&aacute;cia</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Reiniciar iPhone</td>
-                <td>F&aacute;cil</td>
-                <td>2 min</td>
-                <td>Alta</td>
-              </tr>
-              <tr>
-                <td>Reativar Wi-Fi/Bluetooth</td>
-                <td>F&aacute;cil</td>
-                <td>1 min</td>
-                <td>Alta</td>
-              </tr>
-              <tr>
-                <td>Desativar Modo Avi&atilde;o</td>
-                <td>F&aacute;cil</td>
-                <td>30 seg</td>
-                <td>Alta</td>
-              </tr>
-              <tr>
-                <td>Verificar Restri&ccedil;&otilde;es</td>
-                <td>M&eacute;dia</td>
-                <td>3 min</td>
-                <td>M&eacute;dia</td>
-              </tr>
-              <tr>
-                <td>Redefinir Rede</td>
-                <td>M&eacute;dia</td>
-                <td>5 min</td>
-                <td>Alta</td>
-              </tr>
-              <tr>
-                <td>Atualizar iOS</td>
-                <td>F&aacute;cil</td>
-                <td>15 min</td>
-                <td>Alta</td>
-              </tr>
-              <tr>
-                <td>Reset de f&aacute;brica</td>
-                <td>Dif&iacute;cil</td>
-                <td>30+ min</td>
-                <td>Alta</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h2>Quando procurar ajuda t&eacute;cnica</h2>
-
-          <p>Se voc&ecirc; tentou todas as solu&ccedil;&otilde;es acima e o AirDrop ainda n&atilde;o funciona, pode haver um problema de hardware no m&oacute;dulo Bluetooth ou Wi-Fi do seu iPhone. Nesse caso, recomendamos:</p>
-
-          <ul>
-            <li>Levar o iPhone a uma <strong>Assist&ecirc;ncia T&eacute;cnica Autorizada Apple</strong>.</li>
-            <li>Verificar se o iPhone est&aacute; coberto pela <strong>garantia da Apple</strong>.</li>
-            <li>Considerar um <strong>reparo</strong> se o dispositivo estiver fora de garantia.</li>
-          </ul>
-
-          <h2>Perguntas Frequentes (FAQ)</h2>
-
-          <h3>1. O AirDrop funciona entre iPhone e Android?</h3>
-          <p>N&atilde;o. O AirDrop &eacute; uma tecnologia exclusiva da Apple e s&oacute; funciona entre dispositivos Apple (iPhone, iPad e Mac). Para transferir arquivos entre iPhone e Android, use aplicativos como <strong>SHAREit</strong>, <strong>Xender</strong> ou envie por <strong>WhatsApp</strong> e <strong>E-mail</strong>.</p>
-
-          <h3>2. O AirDrop consome muita bateria?</h3>
-          <p>O AirDrop consume uma quantidade moderada de bateria durante o uso, pois mant&eacute;m o Wi-Fi e o Bluetooth ativados. Para economizar bateria, desative o AirDrop ap&oacute;s o uso nas Configura&ccedil;&otilde;es &gt; Geral &gt; AirDrop &gt; Recebimento Desativado.</p>
-
-          <h3>3. Qual a dist&acirc;ncia m&aacute;xima para o AirDrop funcionar?</h3>
-          <p>O AirDrop utiliza Bluetooth para detectar dispositivos pr&oacute;ximos e Wi-Fi para transferir os arquivos. A dist&acirc;ncia recomendada &eacute; de at&eacute; <strong>9 metros (30 p&eacute;s)</strong>. Quanto mais pr&oacute;ximo, mais r&aacute;pida ser&aacute; a transfer&ecirc;ncia.</p>
-
-          <h3>4. O AirDrop funciona com Android ou Windows?</h3>
-          <p>N&atilde;o. O AirDrop &eacute; exclusivo do ecossistema Apple. Para compartilhar arquivos com dispositivos Android ou Windows, useServi&ccedil;os como <strong>Google Drive</strong>, <strong>OneDrive</strong>, <strong>Bluetooth</strong> ou aplicativos de terceiros como <strong>SHAREit</strong>.</p>
-
-          <h3>5. Por que o AirDrop aparece mas n&atilde;o envia o arquivo?</h3>
-          <p>Se o AirDrop aparece mas n&atilde;o consegue enviar, verifique se o destinat&aacute;rio est&aacute; com o AirDrop ativado e configurado para receber de &ldquo;Todos&rdquo; ou &ldquo;Apenas Contatos&rdquo;. Tamb&eacute;m pode ser necess&aacute;rio reiniciar o Wi-Fi e o Bluetooth em ambos os dispositivos.</p>
-
-          <div class="author-box">
-            <div class="author-info">
-              <strong>Equipe CellFix Brasil</strong>
-              <p>Equipe t&eacute;cnica especializada em solu&ccedil;&otilde;es para celulares e dispositivos m&oacute;veis. Mais de 10 anos de experi&ecirc;ncia ajudando milhares de brasileiros a resolver problemas com seus smartphones.</p>
-            </div>
-          </div>
-
-          <section class="related-articles">
+<section class="related-articles">
             <h3>Artigos Relacionados</h3>
             <div class="related-grid">
               <a href="iphone-bateria-descarregando-rapido.html" class="related-card">
@@ -350,55 +102,75 @@
     </div>
   </main>
 
+  
+  
   <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-col">
-        <a href="../index.html" class="logo">CellFix<span>Brasil</span></a>
-        <p>Resolvendo problemas de celulares e apps para milh&otilde;es de brasileiros.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">CF</div>
+            <div class="logo-text">CellFix<span>Brasil</span></div>
+          </a>
+          <p>Resolvendo problemas de celulares e apps para milhões de brasileiros desde 2026.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+            <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Categorias</h4>
+          <nav class="footer-links">
+            <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+            <a href="../categorias/android.html">Android</a>
+            <a href="../categorias/iphone.html">iPhone</a>
+            <a href="../categorias/configuracoes-e-dicas.html">Configurações e Dicas</a>
+            <a href="../categorias/apps-populares.html">Apps Populares</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-heading">Institucional</h4>
+          <nav class="footer-links">
+            <a href="../sobre.html">Sobre Nós</a>
+            <a href="../autor.html">Autor</a>
+            <a href="../contato.html">Contato</a>
+            <a href="../busca.html">Busca</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <nav class="footer-links">
+            <a href="../politica-de-privacidade.html">Política de Privacidade</a>
+            <a href="../termos-de-uso.html">Termos de Uso</a>
+            <a href="../politica-de-cookies.html">Política de Cookies</a>
+            <a href="#" onclick="openCookieSettings(); return false;">Gerenciar Cookies</a>
+          </nav>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Navega&ccedil;&atilde;o</h4>
-        <nav>
-          <a href="../index.html">In&iacute;cio</a>
-          <a href="../sobre.html">Sobre</a>
-          <a href="../contato.html">Contato</a>
-        </nav>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CellFix Brasil. Todos os direitos reservados. Feito com dedicação para ajudar milhões de brasileiros.</p>
       </div>
-      <div class="footer-col">
-        <h4>Categorias</h4>
-        <nav>
-          <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
-          <a href="../categorias/android.html">Android</a>
-          <a href="../categorias/iphone.html">iPhone</a>
-          <a href="../categorias/configuracoes-e-dicas.html">Configura&ccedil;&otilde;es e Dicas</a>
-          <a href="../categorias/apps-populares.html">Apps Populares</a>
-        </nav>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <nav>
-          <a href="../politica-de-privacidade.html">Pol&iacute;tica de Privacidade</a>
-          <a href="../termos-de-uso.html">Termos de Uso</a>
-          <a href="../politica-de-cookies.html">Pol&iacute;tica de Cookies</a>
-          <a href="#" onclick="openCookieSettings(); return false;">Gerenciar cookies</a>
-        </nav>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 CellFix Brasil. Todos os direitos reservados.</p>
     </div>
   </footer>
 
   <div class="cookie-banner" id="cookie-banner">
-    <div class="cookie-content">
-      <p>Utilizamos cookies para melhorar sua experi&ecirc;ncia. Ao continuar navegando, voc&ecirc; concorda com nossa <a href="../politica-de-cookies.html">Pol&iacute;tica de Cookies</a>.</p>
-      <div class="cookie-actions">
-        <button id="accept-cookies" class="btn-primary">Aceitar</button>
-        <button id="reject-cookies" class="btn-secondary">Rejeitar</button>
-        <button onclick="openCookieSettings()" class="btn-link">Personalizar</button>
+    <div class="cookie-banner-inner">
+      <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="../politica-de-cookies.html">Política de Cookies</a>.</p>
+      <div class="cookie-banner-actions">
+        <button id="accept-cookies" class="cookie-btn cookie-btn-accept">Aceitar Todos</button>
+        <button id="reject-cookies" class="cookie-btn cookie-btn-decline">Rejeitar</button>
       </div>
     </div>
   </div>
+</div>
+
+  <button class="skip-to-top" id="skip-to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+>
+</div>
 
   <script src="../js/main.js"></script>
   <script src="../js/search.js"></script>

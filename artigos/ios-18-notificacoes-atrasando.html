@@ -23,174 +23,64 @@
 </head>
 <body>
   <a class="skip-link" href="#conteudo-principal">Ir para o conte&uacute;do</a>
-  <header class="site-header" id="site-header">
+    <header class="site-header" id="site-header">
     <div class="header-inner">
-      <a href="../index.html" class="logo">CellFix<span>Brasil</span></a>
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">CF</div>
+        <div class="logo-text">CellFix<span>Brasil</span></div>
+      </a>
       <nav class="main-nav" id="main-nav">
-        <a href="../index.html">In&iacute;cio</a>
-        <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
-        <a href="../categorias/android.html">Android</a>
-<a href="../categorias/iphone.html">iPhone</a>
-        <a href="../categorias/configuracoes-e-dicas.html">Configura&ccedil;&otilde;es e Dicas</a>
-        <a href="../categorias/apps-populares.html">Apps Populares</a>
-        <a href="../sobre.html">Sobre</a>
-        <a href="../contato.html">Contato</a>
+        <div class="nav-links">
+          <a href="../index.html">Início</a>
+          <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+          <a href="../categorias/android.html">Android</a>
+          <a href="../categorias/iphone.html" class="active">iPhone</a>
+          <a href="../categorias/configuracoes-e-dicas.html">Configurações</a>
+          <a href="../categorias/apps-populares.html">Apps Populares</a>
+          <a href="../sobre.html">Sobre</a>
+          <a href="../contato.html">Contato</a>
+        </div>
       </nav>
-      <button class="search-btn" id="search-btn" aria-label="Buscar">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </button>
-      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <div class="header-actions">
+        <button class="search-toggle" id="search-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="mobile-menu-btn" id="hamburger" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
     </div>
   </header>
-  <div class="search-overlay" id="search-overlay">
-    <form class="search-form" role="search">
-      <input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" aria-label="Buscar">
-      <button type="submit">Buscar</button>
-      <button type="button" class="close-search" id="close-search" aria-label="Fechar busca">&times;</button>
-    </form>
-  </div>
 
-  <main id="conteudo-principal">
-    <div class="container">
-      <nav class="breadcrumbs" aria-label="breadcrumb">
-        <a href="../index.html">Inicio</a> &gt;
-        <a href="../categorias/iphone.html">iPhone</a> &gt;
-        <span>iOS 18 notificacoes atrasando</span>
-      </nav>
-      <article class="article-page">
-        <header class="article-header">
-          <h1>iOS 18: notificacoes atrasando &mdash; como resolver</h1>
-          <div class="article-meta">
-            <span class="author">Por <strong>Equipe CellFix Brasil</strong></span>
-            <time datetime="2026-08-17">17 ago 2026</time>
-            <span class="updated">Atualizado em <time datetime="2026-08-22">22 ago 2026</time></span>
-            <span class="reading-time">5 min de leitura</span>
-          </div>
-        </header>
-        <figure class="article-featured-image">
-          <img src="../imagens/artigos/ios-18-notificacoes-atrasando.svg" alt="iPhone com notificacoes atrasando no iOS 18" width="1200" height="630" loading="eager">
-          <figcaption>Notificacoes atrasando no iOS 18? Veja como resolver o problema</figcaption>
-        </figure>
-        <div class="article-body">
-<div class="toc" id="toc">
-  <h2>Sumario</h2>
-  <ul>
-    <li><a href="#causas">Por que as notificacoes atrasam?</a></li>
-    <li><a href="#foco">Verificar modos Foco</a></li>
-    <li><a href="#app-config">Configuracoes de notificacao por app</a></li>
-    <li><a href="#reiniciar">Reiniciar o iPhone</a></li>
-    <li><a href="#atualizar">Atualizar o iOS</a></li>
-    <li><a href="#reset">Redefinir configuracoes</a></li>
-    <li><a href="#faq">Perguntas Frequentes</a></li>
-  </ul>
-</div>
-<p>Atualizar o iPhone para o iOS 18 pode trazer muitas novidades, mas tambem pode causar problemas inesperados. Um dos mais comuns e o <strong>atraso nas notificacoes</strong>, que faz com que mensagens, alertas de apps e chamadas so aparecam minutos ou ate horas depois de serem enviadas.</p>
-<p>Se voce esta enfrentando esse problema, nao se preocupe. Neste guia, vamos mostrar 5 solucoes testadas para corrigir o atraso de notificacoes no iOS 18.</p>
-<h2 id="causas">Por que as notificacoes atrasam no iOS 18?</h2>
-<p>Antes de resolver o problema, e importante entender as possiveis causas:</p>
-<ul>
-  <li><strong>Modos Foco ativos:</strong> O Modo Foco pode silenciar ou adiar notificacoes de certos apps.</li>
-  <li><strong>Configuracoes de notificacao incorretas:</strong> Alguns apps podem ter notificacoes desativadas ou configuradas para modo Entregue Silenciosamente.</li>
-  <li><strong>Baixa energia:</strong> O Modo Pouco Energia pode limitar a busca por novas notificacoes em segundo plano.</li>
-  <li><strong>Conexao instavel:</strong> Wi-Fi ou dados moveis com sinal fraco podem atrasar a chegada de notificacoes.</li>
-  <li><strong>Bug do sistema:</strong> Versoes recentes do iOS podem conter bugs que afetam o servico de notificacoes da Apple (APNs).</li>
-</ul>
-<div class="tip-box">
-  <strong>Dica:</strong> Antes de tentar qualquer solucao, verifique se o problema afeta todos os apps ou apenas alguns. Isso ajuda a identificar a causa mais rapido.
-</div>
-<h2 id="foco">1. Verificar modos Foco</h2>
-<p>Os modos Foco do iPhone podem bloquear ou adiar notificacoes sem que voce perceba. Verifique se algum modo esta ativo:</p>
-<ol>
-  <li>Abra o <strong>Centro de Controle</strong> (deslize para baixo no canto superior direito).</li>
-  <li>Toque no icone de <strong>Foco</strong>.</li>
-  <li>Se algum modo estiver ativo (Dormir, Pessoal, Trabalho, etc.), toque nele para <strong>desativar</strong>.</li>
-  <li>Verifique se as comecam a chegar normalmente.</li>
-</ol>
-<p>Voce tambem pode revisar as configuracoes de cada modo Foco:</p>
-<ol>
-  <li>Va para <strong>Configuracoes</strong> &gt; <strong>Foco</strong>.</li>
-  <li>Toque no modo que deseja revisar.</li>
-  <li>Verifique a secao <strong>Notificacoes Permitidas</strong> e garanta que os apps importantes estejam na lista.</li>
-  <li>Verifique se <strong>Compartilhar entre dispositivos</strong> nao esta causando conflitos.</li>
-</ol>
-<div class="warning-box">
-  <strong>Atencao:</strong> Se voce configura modos Foco com base em localizacao ou horario, eles podem estar sendo ativados automaticamente. Verifique a secao <strong>Automacao</strong> dentro de cada modo Foco.
-</div>
-<h2 id="app-config">2. Configuracoes de notificacao por app</h2>
-<p>Cada app possui configuracoes proprias de notificacao. Verifique se estao corretas para os apps que estao com problema:</p>
-<ol>
-  <li>Va para <strong>Configuracoes</strong> &gt; <strong>Notificacoes</strong>.</li>
-  <li>Toque no app que esta com problema.</li>
-  <li>Verifique se <strong>Permitir Notificacoes</strong> esta ativo.</li>
-  <li>Na secao <strong>Alertas</strong>, marque as opcoes: Tela de Bloqueio, Centro de Notificacoes e Banheira.</li>
-  <li>Desative <strong>Entregue Silenciosamente</strong> se estiver ativo.</li>
-  <li>Desative <strong>Agrupar</strong> ou configure como <strong>Automatico</strong>.</li>
-</ol>
-<p>Apps comuns que podem ter problemas de notificacao no iOS 18:</p>
-<table>
-  <thead><tr><th>App</th><th>Configuracao recomendada</th></tr></thead>
-  <tbody>
-    <tr><td><strong>WhatsApp</strong></td><td>Configuracoes &gt; Notificacoes &gt; Permitir Notificacoes (tudo ativado)</td></tr>
-    <tr><td><strong>Instagram</strong></td><td>Configuracoes &gt; Notificacoes &gt; Permitir Notificacoes (tudo ativado)</td></tr>
-    <tr><td><strong>Gmail</strong></td><td>Configuracoes &gt; Notificacoes &gt; Modo de Entrega: Tempo Real</td></tr>
-    <tr><td><strong>Telegram</strong></td><td>Configuracoes &gt; Notificacoes &gt; Som: Padrao do Sistema</td></tr>
-    <tr><td><strong>Outlook</strong></td><td>Configuracoes &gt; Notificacoes &gt; Tempo Real ativado</td></tr>
-  </tbody>
-</table>
-<h2 id="reiniciar">3. Reiniciar o iPhone</h2>
-<p>Uma solucao simples que resolve muitos problemas e reiniciar o dispositivo. Isso limpa a memoria temporaria e reinicia os servicos do sistema, incluindo o servico de notificacoes:</p>
-<ol>
-  <li>Mantenha pressionado o <strong>botao lateral</strong> e um dos <strong>botoes de volume</strong>.</li>
-  <li>Aguarde aparecer o slider <strong>Desligar</strong>.</li>
-  <li>Deslize para desligar o iPhone.</li>
-  <li>Espere 30 segundos.</li>
-  <li>Mantenha pressionado o botao lateral para ligar novamente.</li>
-</ol>
-<div class="tip-box">
-  <strong>Dica:</strong> Para iPhones mais recentes (iPhone X e posteriores), segure botao lateral + volume ate aparecer o slider. Para iPhones com Home fisico, segure o botao lateral.
-</div>
-<h2 id="atualizar">4. Atualizar o iOS</h2>
-<p>A Apple lanca correcoes de bug frequentemente. Se o problema de notificacoes e causado por um bug do sistema, uma atualizacao pode resolver:</p>
-<ol>
-  <li>Conecte o iPhone a uma rede Wi-Fi estavel.</li>
-  <li>Va para <strong>Configuracoes</strong> &gt; <strong>Geral</strong> &gt; <strong>Atualizacao de Software</strong>.</li>
-  <li>Se houver uma atualizacao disponivel, baixe e instale.</li>
-  <li>Aguarde o iPhone reiniciar.</li>
-</ol>
-<div class="warning-box">
-  <strong>Atencao:</strong> Antes de atualizar, faca um backup completo do iPhone via iCloud ou computador. Isso garante que seus dados estejam seguros caso algo precise ser restaurado.
-</div>
-<h2 id="reset">5. Redefinir configuracoes</h2>
-<p>Se nenhuma das solucoes anteriores funcionou, a redefinicao de configuracoes pode corrigir o problema. Isso nao apaga seus dados, apenas retorna as configuracoes de sistema ao padrao:</p>
-<ol>
-  <li>Va para <strong>Configuracoes</strong> &gt; <strong>Geral</strong> &gt; <strong>Transferir ou Redefinir iPhone</strong>.</li>
-  <li>Toque em <strong>Redefinir</strong>.</li>
-  <li>Selecione <strong>Redefinir Todas as Configuracoes</strong>.</li>
-  <li>Digite seu codigo de acesso.</li>
-  <li>Confirme a acao.</li>
-</ol>
-<p>O iPhone ira reiniciar e todas as configuracoes serao restauradas ao padrao de fabrica. Voce precisara reconfigurar Wi-Fi, Foco, notificacoes e outras preferencias.</p>
-<div class="error-box">
-  <strong>Erro comum:</strong> Nao confunda "Redefinir Todas as Configuracoes" com "Apagar Conteudo e Configuracoes". O segundo comando apaga todos os dados do iPhone, entao tenha cuidado ao selecionar a opcao correta.
-</div>
-<h2 id="faq">Perguntas Frequentes (FAQ)</h2>
-<h3>1. So eu estou com problema de notificacoes no iOS 18?</h3>
-<p>O problema e relativamente comum apos atualizacoes do iOS. Variaveis como configuracoes de Foco, modo Pouco Energia e conectividade podem influenciar. Siga os passos acima para identificar a causa no seu dispositivo.</p>
-<h3>2. As notificacoes do WhatsApp atrasam mais que outros apps?</h3>
-<p>Sim, o WhatsApp e frequentemente afetado porque depende fortemente da conexao com os servidores da Meta e do servico de push da Apple. Verifique as configuracoes de notificacao do WhatsApp e garanta que o app nao esta em modo de economia de dados.</p>
-<h3>3. O Modo Pouco Energia causa atraso nas notificacoes?</h3>
-<p>Sim. Quando o Modo Pouco Energia esta ativo, o iPhone limita atividades em segundo plano, incluindo a busca por novas notificacoes. Desative o Modo Pouco Energia para garantir que as notificacoes cheguem em tempo real.</p>
-<h3>4. Redefinir configuracoes apaga meus dados?</h3>
-<p>Nao. A opcao "Redefinir Todas as Configuracoes" apenas retorna as configuracoes do sistema ao padrao. Seus apps, fotos, mensagens e dados pessoais nao sao afetados.</p>
-<h3>5. Ainda devo esperar uma atualizacao do iOS para corrigir?</h3>
-<p>Sim. A Apple lancara correcoes em atualizacoes futuras. Enquanto isso, as solucoes acima podem amenizar o problema. Verifique a secao de Atualizacao de Software regularmente.</p>
-          <div class="author-box">
-            <div class="author-info">
-              <strong>Equipe CellFix Brasil</strong>
-              <p>Equipe tecnica especializada em solucoes para celulares e dispositivos moveis.</p>
-            </div>
-          </div>
-          <section class="related-articles">
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="../index.html">Início</a>
+      <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+      <a href="../categorias/android.html">Android</a>
+      <a href="../categorias/iphone.html" class="active">iPhone</a>
+      <a href="../categorias/configuracoes-e-dicas.html">Configurações</a>
+      <a href="../categorias/apps-populares.html">Apps Populares</a>
+      <a href="../sobre.html">Sobre</a>
+      <a href="../contato.html">Contato</a>
+    </div>
+  </nav>
+
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-box">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" placeholder="Buscar no CellFix Brasil..." id="search-input" class="search-input" aria-label="Buscar">
+        <button type="button" class="search-close" id="close-search" aria-label="Fechar busca">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+<section class="related-articles">
             <h3>Artigos Relacionados</h3>
             <div class="related-grid">
               <a href="iphone-15-tela-piscando.html" class="related-card"><span class="category-badge">iPhone</span><h4>iPhone 15 com tela piscando - como resolver</h4></a>
@@ -202,48 +92,75 @@
       </article>
     </div>
   </main>
+  
+  
   <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-col">
-        <a href="../index.html" class="logo">CellFix<span>Brasil</span></a>
-        <p>Resolvendo problemas de celulares e apps para milhoes de brasileiros.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">CF</div>
+            <div class="logo-text">CellFix<span>Brasil</span></div>
+          </a>
+          <p>Resolvendo problemas de celulares e apps para milhões de brasileiros desde 2026.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+            <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Categorias</h4>
+          <nav class="footer-links">
+            <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
+            <a href="../categorias/android.html">Android</a>
+            <a href="../categorias/iphone.html">iPhone</a>
+            <a href="../categorias/configuracoes-e-dicas.html">Configurações e Dicas</a>
+            <a href="../categorias/apps-populares.html">Apps Populares</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-heading">Institucional</h4>
+          <nav class="footer-links">
+            <a href="../sobre.html">Sobre Nós</a>
+            <a href="../autor.html">Autor</a>
+            <a href="../contato.html">Contato</a>
+            <a href="../busca.html">Busca</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <nav class="footer-links">
+            <a href="../politica-de-privacidade.html">Política de Privacidade</a>
+            <a href="../termos-de-uso.html">Termos de Uso</a>
+            <a href="../politica-de-cookies.html">Política de Cookies</a>
+            <a href="#" onclick="openCookieSettings(); return false;">Gerenciar Cookies</a>
+          </nav>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Navegacao</h4>
-        <nav><a href="../index.html">Inicio</a><a href="../sobre.html">Sobre</a><a href="../contato.html">Contato</a></nav>
-      </div>
-      <div class="footer-col">
-        <h4>Categorias</h4>
-        <nav>
-          <a href="../categorias/erros-de-apps.html">Erros de Apps</a>
-          <a href="../categorias/android.html">Android</a>
-<a href="../categorias/iphone.html" class="active">iPhone</a>
-          <a href="../categorias/configuracoes-e-dicas.html">Configuracoes e Dicas</a>
-          <a href="../categorias/apps-populares.html">Apps Populares</a>
-        </nav>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <nav>
-          <a href="../politica-de-privacidade.html">Politica de Privacidade</a>
-          <a href="../termos-de-uso.html">Termos de Uso</a>
-          <a href="../politica-de-cookies.html">Politica de Cookies</a>
-          <a href="#" onclick="openCookieSettings(); return false;">Gerenciar cookies</a>
-        </nav>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CellFix Brasil. Todos os direitos reservados. Feito com dedicação para ajudar milhões de brasileiros.</p>
       </div>
     </div>
-    <div class="footer-bottom"><p>&copy; 2026 CellFix Brasil. Todos os direitos reservados.</p></div>
   </footer>
+
   <div class="cookie-banner" id="cookie-banner">
-    <div class="cookie-content">
-      <p>Utilizamos cookies para melhorar sua experiencia. Ao continuar navegando, voce concorda com nossa <a href="../politica-de-cookies.html">Politica de Cookies</a>.</p>
-      <div class="cookie-actions">
-        <button id="accept-cookies" class="btn-primary">Aceitar</button>
-        <button id="reject-cookies" class="btn-secondary">Rejeitar</button>
-        <button onclick="openCookieSettings()" class="btn-link">Personalizar</button>
+    <div class="cookie-banner-inner">
+      <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="../politica-de-cookies.html">Política de Cookies</a>.</p>
+      <div class="cookie-banner-actions">
+        <button id="accept-cookies" class="cookie-btn cookie-btn-accept">Aceitar Todos</button>
+        <button id="reject-cookies" class="cookie-btn cookie-btn-decline">Rejeitar</button>
       </div>
     </div>
   </div>
+</div>
+
+  <button class="skip-to-top" id="skip-to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+>
+</div>
   <script src="../js/main.js"></script>
   <script src="../js/search.js"></script>
   <script src="../js/cookies.js"></script>
