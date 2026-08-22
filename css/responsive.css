@@ -35,7 +35,7 @@
   .cards-grid { grid-template-columns: 1fr; gap: 16px; }
   .featured-card { grid-column: 1; }
   .card { display: grid; grid-template-columns: 140px 1fr; }
-  .card-image { padding-top: 0; min-height: 100px; }
+  .card-image { padding-top: 0; min-height: 100px; margin: 12px 0 0 12px; }
   .card-content { padding: 16px; }
   .card h3 { font-size: 1rem; }
   .card-excerpt { -webkit-line-clamp: 2; font-size: 0.85rem; }
@@ -71,7 +71,7 @@
   .hero p { font-size: 0.92rem; }
   .section-title { font-size: 1.3rem; margin-bottom: 20px; }
   .card { grid-template-columns: 1fr; }
-  .card-image { min-height: 140px; }
+  .card-image { min-height: 140px; margin: 12px 12px 0; }
   .article-header h1 { font-size: 1.5rem; }
   .article-meta { gap: 10px; font-size: 0.82rem; }
   .article-content { font-size: 0.95rem; }
