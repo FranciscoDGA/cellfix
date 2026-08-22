@@ -10,7 +10,7 @@
   .sidebar { order: 2; }
   .cards-grid { grid-template-columns: repeat(2, 1fr); }
   .featured-card { grid-template-columns: 1fr; }
-  .featured-card .card-image { min-height: 240px; }
+  .featured-card .card-image { min-height: 180px; }
   .related-grid { grid-template-columns: repeat(2, 1fr); }
   .related-articles-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
@@ -35,7 +35,7 @@
   .cards-grid { grid-template-columns: 1fr; gap: 16px; }
   .featured-card { grid-column: 1; }
   .card { display: grid; grid-template-columns: 140px 1fr; }
-  .card-image { padding-top: 0; min-height: 120px; }
+  .card-image { padding-top: 0; min-height: 100px; }
   .card-content { padding: 16px; }
   .card h3 { font-size: 1rem; }
   .card-excerpt { -webkit-line-clamp: 2; font-size: 0.85rem; }
@@ -71,7 +71,7 @@
   .hero p { font-size: 0.92rem; }
   .section-title { font-size: 1.3rem; margin-bottom: 20px; }
   .card { grid-template-columns: 1fr; }
-  .card-image { min-height: 180px; }
+  .card-image { min-height: 140px; }
   .article-header h1 { font-size: 1.5rem; }
   .article-meta { gap: 10px; font-size: 0.82rem; }
   .article-content { font-size: 0.95rem; }
